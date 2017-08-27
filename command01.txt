@@ -1,0 +1,1604 @@
+ls
+Desktop    Downloads         Music     Public     Videos
+Documents  examples.desktop  Pictures  Templates
+anoop@anoopVB:~$ cd Desktop/
+anoop@anoopVB:~/Desktop$ ls
+elxSpace  TutoElixir  TutoElixir.zip  WinDesk
+anoop@anoopVB:~/Desktop$ cd elxSpace/
+anoop@anoopVB:~/Desktop/elxSpace$ ls
+mango-master  phx_new.ez  restApi01  restApi02  restApi03
+anoop@anoopVB:~/Desktop/elxSpace$ mix phx.new luduExp
+* creating luduExp/config/config.exs
+* creating luduExp/config/dev.exs
+* creating luduExp/config/prod.exs
+* creating luduExp/config/prod.secret.exs
+* creating luduExp/config/test.exs
+* creating luduExp/lib/luduExp/application.ex
+* creating luduExp/lib/luduExp.ex
+* creating luduExp/lib/luduExp_web/channels/user_socket.ex
+* creating luduExp/lib/luduExp_web/views/error_helpers.ex
+* creating luduExp/lib/luduExp_web/views/error_view.ex
+* creating luduExp/lib/luduExp_web/endpoint.ex
+* creating luduExp/lib/luduExp_web/router.ex
+* creating luduExp/lib/luduExp_web.ex
+* creating luduExp/mix.exs
+* creating luduExp/README.md
+* creating luduExp/test/support/channel_case.ex
+* creating luduExp/test/support/conn_case.ex
+* creating luduExp/test/test_helper.exs
+* creating luduExp/test/luduExp_web/views/error_view_test.exs
+* creating luduExp/lib/luduExp_web/gettext.ex
+* creating luduExp/priv/gettext/en/LC_MESSAGES/errors.po
+* creating luduExp/priv/gettext/errors.pot
+* creating luduExp/lib/luduExp/repo.ex
+* creating luduExp/priv/repo/seeds.exs
+* creating luduExp/test/support/data_case.ex
+* creating luduExp/lib/luduExp_web/controllers/page_controller.ex
+* creating luduExp/lib/luduExp_web/templates/layout/app.html.eex
+* creating luduExp/lib/luduExp_web/templates/page/index.html.eex
+* creating luduExp/lib/luduExp_web/views/layout_view.ex
+* creating luduExp/lib/luduExp_web/views/page_view.ex
+* creating luduExp/test/luduExp_web/controllers/page_controller_test.exs
+* creating luduExp/test/luduExp_web/views/layout_view_test.exs
+* creating luduExp/test/luduExp_web/views/page_view_test.exs
+* creating luduExp/.gitignore
+* creating luduExp/assets/brunch-config.js
+* creating luduExp/assets/css/app.css
+* creating luduExp/assets/css/phoenix.css
+* creating luduExp/assets/js/app.js
+* creating luduExp/assets/js/socket.js
+* creating luduExp/assets/package.json
+* creating luduExp/assets/static/robots.txt
+* creating luduExp/assets/static/images/phoenix.png
+* creating luduExp/assets/static/favicon.ico
+
+Fetch and install dependencies? [Yn] Y
+* running mix deps.get
+* running mix deps.compile
+* running cd assets && npm install && node node_modules/brunch/bin/brunch build
+
+We are all set! Go into your application by running:
+
+    $ cd luduExp
+
+Then configure your database in config/dev.exs and run:
+
+    $ mix ecto.create
+
+Start your Phoenix app with:
+
+    $ mix phx.server
+
+You can also run your app inside IEx (Interactive Elixir) as:
+
+    $ iex -S mix phx.server
+
+anoop@anoopVB:~/Desktop/elxSpace$ mix phx.server
+** (Mix) The task "phx.server" could not be found
+anoop@anoopVB:~/Desktop/elxSpace$ cd luduExp/
+anoop@anoopVB:~/Desktop/elxSpace/luduExp$ mix phx.server
+Compiling 13 files (.ex)
+Generated luduExp app
+[error] Postgrex.Protocol (#PID<0.372.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.376.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.375.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.374.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.373.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.377.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.381.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.380.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.379.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.378.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[info] Running LuduExpWeb.Endpoint with Cowboy using http://0.0.0.0:4000
+[error] Postgrex.Protocol (#PID<0.372.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.378.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.373.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.376.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.381.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.375.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.379.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.377.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.374.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.380.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.372.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.376.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+18:04:27 - info: compiled 6 files into 2 files, copied 3 in 2.0 sec
+[error] Postgrex.Protocol (#PID<0.378.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.373.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.375.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.381.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.374.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.377.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.379.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.376.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.372.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.380.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.378.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.373.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.375.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.376.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+^C
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+^Canoop@anoopVB:~/Desktop/elxSpace/luduExp$ mix phx.server
+[error] Postgrex.Protocol (#PID<0.245.0>) failed to connect: ** (DBConnection.ConnectionError) tcp recv: closed
+[error] Postgrex.Protocol (#PID<0.244.0>) failed to connect: ** (DBConnection.ConnectionError) tcp recv: closed
+[error] Postgrex.Protocol (#PID<0.243.0>) failed to connect: ** (DBConnection.ConnectionError) tcp recv: closed
+[error] Postgrex.Protocol (#PID<0.242.0>) failed to connect: ** (DBConnection.ConnectionError) tcp recv: closed
+[error] Postgrex.Protocol (#PID<0.241.0>) failed to connect: ** (DBConnection.ConnectionError) tcp recv: closed
+[error] Postgrex.Protocol (#PID<0.237.0>) failed to connect: ** (DBConnection.ConnectionError) tcp recv: closed
+[error] Postgrex.Protocol (#PID<0.240.0>) failed to connect: ** (DBConnection.ConnectionError) tcp recv: closed
+[error] Postgrex.Protocol (#PID<0.239.0>) failed to connect: ** (DBConnection.ConnectionError) tcp recv: closed
+[error] Postgrex.Protocol (#PID<0.238.0>) failed to connect: ** (DBConnection.ConnectionError) tcp recv: closed
+[error] Postgrex.Protocol (#PID<0.246.0>) failed to connect: ** (Postgrex.Error) FATAL XX000 (internal_error): semctl(196614, 3, SETVAL, 0) failed: Invalid argument
+[info] Running LuduExpWeb.Endpoint with Cowboy using http://0.0.0.0:4000
+[error] Postgrex.Protocol (#PID<0.246.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.239.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.245.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.243.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.237.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.242.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.240.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.241.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+18:18:04 - info: compiled 6 files into 2 files, copied 3 in 1.2 sec
+[error] Postgrex.Protocol (#PID<0.239.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.244.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.238.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.243.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+[error] Postgrex.Protocol (#PID<0.246.0>) failed to connect: ** (Postgrex.Error) FATAL 3D000 (invalid_catalog_name): database "luduexp_dev" does not exist
+^C
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+^Canoop@anoopVB:~/Desktop/elxSpace/luduExp$ mix ecto.create
+The database for LuduExp.Repo has been created
+anoop@anoopVB:~/Desktop/elxSpace/luduExp$ mix phx.server
+[info] Running LuduExpWeb.Endpoint with Cowboy using http://0.0.0.0:4000
+18:18:32 - info: compiled 6 files into 2 files, copied 3 in 854 ms
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 129ms
+Compiling 6 files (.ex)
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 500 in 160ms
+[error] #PID<0.426.0> running LuduExpWeb.Endpoint terminated
+Server: localhost:4000 (http)
+Request: GET /signup
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function LuduExpWeb.PageController.signup/2 is undefined or private
+        (luduExp) LuduExpWeb.PageController.signup(%Plug.Conn{adapter: {Plug.Adapters.Cowboy.Conn, :...}, assigns: %{}, before_send: [#Function<0.96292254/1 in Plug.CSRFProtection.call/2>, #Function<4.65855418/1 in Phoenix.Controller.fetch_flash/2>, #Function<0.112984571/1 in Plug.Session.before_send/2>, #Function<1.127390901/1 in Plug.Logger.call/2>, #Function<0.82068639/1 in Phoenix.LiveReloader.before_send_inject_reloader/2>], body_params: %{}, cookies: %{}, halted: false, host: "localhost", method: "GET", owner: #PID<0.426.0>, params: %{}, path_info: ["signup"], path_params: %{}, peer: {{127, 0, 0, 1}, 50530}, port: 4000, private: %{LuduExpWeb.Router => {[], %{}}, :phoenix_action => :signup, :phoenix_controller => LuduExpWeb.PageController, :phoenix_endpoint => LuduExpWeb.Endpoint, :phoenix_flash => %{}, :phoenix_format => "html", :phoenix_layout => {LuduExpWeb.LayoutView, :app}, :phoenix_pipelines => [:browser], :phoenix_router => LuduExpWeb.Router, :phoenix_view => LuduExpWeb.PageView, :plug_session => %{}, :plug_session_fetch => :done}, query_params: %{}, query_string: "", remote_ip: {127, 0, 0, 1}, req_cookies: %{}, req_headers: [{"host", "localhost:4000"}, {"user-agent", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0"}, {"accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}, {"accept-language", "en-US,en;q=0.5"}, {"accept-encoding", "gzip, deflate"}, {"connection", "keep-alive"}, {"upgrade-insecure-requests", "1"}], request_path: "/signup", resp_body: nil, resp_cookies: %{}, resp_headers: [{"cache-control", "max-age=0, private, must-revalidate"}, {"x-request-id", "mroh2ic7hutuiu1s4v3b1vkpcbpgvjjj"}, {"x-frame-options", "SAMEORIGIN"}, {"x-xss-protection", "1; mode=block"}, {"x-content-type-options", "nosniff"}], scheme: :http, script_name: [], secret_key_base: "KqsZjM8bc4GNGY54/Ab1PvpBdU/t/6FJ5IQQOQvrUo1er8FO3p7dFfJlmxAfAX3U", state: :unset, status: nil}, %{})
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.action/2
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.phoenix_controller_pipeline/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.instrument/4
+        (phoenix) lib/phoenix/router.ex:278: Phoenix.Router.__call__/1
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+        (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+        (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+        (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 156µs
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 500 in 39ms
+[error] #PID<0.449.0> running LuduExpWeb.Endpoint terminated
+Server: localhost:4000 (http)
+Request: GET /signup
+** (exit) an exception was raised:
+    ** (Phoenix.Template.UndefinedError) Could not render "signup.html" for LuduExpWeb.PageView, please define a matching clause for render/2 or define a template at "lib/luduExp_web/templates/page". The following templates were compiled:
+
+* index.html
+
+Assigns:
+
+%{conn: %Plug.Conn{adapter: {Plug.Adapters.Cowboy.Conn, :...}, assigns: %{layout: {LuduExpWeb.LayoutView, "app.html"}}, before_send: [#Function<0.96292254/1 in Plug.CSRFProtection.call/2>, #Function<4.65855418/1 in Phoenix.Controller.fetch_flash/2>, #Function<0.112984571/1 in Plug.Session.before_send/2>, #Function<1.127390901/1 in Plug.Logger.call/2>, #Function<0.82068639/1 in Phoenix.LiveReloader.before_send_inject_reloader/2>], body_params: %{}, cookies: %{}, halted: false, host: "localhost", method: "GET", owner: #PID<0.449.0>, params: %{}, path_info: ["signup"], path_params: %{}, peer: {{127, 0, 0, 1}, 50542}, port: 4000, private: %{LuduExpWeb.Router => {[], %{}}, :phoenix_action => :signup, :phoenix_controller => LuduExpWeb.PageController, :phoenix_endpoint => LuduExpWeb.Endpoint, :phoenix_flash => %{}, :phoenix_format => "html", :phoenix_layout => {LuduExpWeb.LayoutView, :app}, :phoenix_pipelines => [:browser], :phoenix_router => LuduExpWeb.Router, :phoenix_template => "signup.html", :phoenix_view => LuduExpWeb.PageView, :plug_session => %{}, :plug_session_fetch => :done}, query_params: %{}, query_string: "", remote_ip: {127, 0, 0, 1}, req_cookies: %{}, req_headers: [{"host", "localhost:4000"}, {"user-agent", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0"}, {"accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}, {"accept-language", "en-US,en;q=0.5"}, {"accept-encoding", "gzip, deflate"}, {"connection", "keep-alive"}, {"upgrade-insecure-requests", "1"}], request_path: "/signup", resp_body: nil, resp_cookies: %{}, resp_headers: [{"cache-control", "max-age=0, private, must-revalidate"}, {"x-request-id", "6rja45948eg32sc9e7v7mlavldat1o7r"}, {"x-frame-options", "SAMEORIGIN"}, {"x-xss-protection", "1; mode=block"}, {"x-content-type-options", "nosniff"}], scheme: :http, script_name: [], secret_key_base: "KqsZjM8bc4GNGY54/Ab1PvpBdU/t/6FJ5IQQOQvrUo1er8FO3p7dFfJlmxAfAX3U", state: :unset, status: nil}, template_not_found: LuduExpWeb.PageView, view_module: LuduExpWeb.PageView, view_template: "signup.html"}
+
+Assigned keys: [:conn, :template_not_found, :view_module, :view_template]
+
+        (phoenix) lib/phoenix/template.ex:364: Phoenix.Template.raise_template_not_found/3
+        (luduExp) lib/luduExp_web/templates/layout/app.html.eex:29: LuduExpWeb.LayoutView."app.html"/1
+        (phoenix) lib/phoenix/view.ex:332: Phoenix.View.render_to_iodata/3
+        (phoenix) lib/phoenix/controller.ex:740: Phoenix.Controller.do_render/4
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.action/2
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.phoenix_controller_pipeline/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.instrument/4
+        (phoenix) lib/phoenix/router.ex:278: Phoenix.Router.__call__/1
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+        (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+        (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+        (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+[debug] Live reload: lib/luduExp_web/templates/page/login.html.eex
+[debug] Live reload: lib/luduExp_web/templates/page/login.html.eex
+Compiling 1 file (.ex)
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 500 in 19ms
+[error] #PID<0.456.0> running LuduExpWeb.Endpoint terminated
+Server: localhost:4000 (http)
+Request: GET /signup
+** (exit) an exception was raised:
+    ** (Phoenix.Template.UndefinedError) Could not render "signup.html" for LuduExpWeb.PageView, please define a matching clause for render/2 or define a template at "lib/luduExp_web/templates/page". The following templates were compiled:
+
+* index.html
+* login.html
+
+Assigns:
+
+%{conn: %Plug.Conn{adapter: {Plug.Adapters.Cowboy.Conn, :...}, assigns: %{layout: {LuduExpWeb.LayoutView, "app.html"}}, before_send: [#Function<0.96292254/1 in Plug.CSRFProtection.call/2>, #Function<4.65855418/1 in Phoenix.Controller.fetch_flash/2>, #Function<0.112984571/1 in Plug.Session.before_send/2>, #Function<1.127390901/1 in Plug.Logger.call/2>, #Function<0.82068639/1 in Phoenix.LiveReloader.before_send_inject_reloader/2>], body_params: %{}, cookies: %{}, halted: false, host: "localhost", method: "GET", owner: #PID<0.456.0>, params: %{}, path_info: ["signup"], path_params: %{}, peer: {{127, 0, 0, 1}, 50548}, port: 4000, private: %{LuduExpWeb.Router => {[], %{}}, :phoenix_action => :signup, :phoenix_controller => LuduExpWeb.PageController, :phoenix_endpoint => LuduExpWeb.Endpoint, :phoenix_flash => %{}, :phoenix_format => "html", :phoenix_layout => {LuduExpWeb.LayoutView, :app}, :phoenix_pipelines => [:browser], :phoenix_router => LuduExpWeb.Router, :phoenix_template => "signup.html", :phoenix_view => LuduExpWeb.PageView, :plug_session => %{}, :plug_session_fetch => :done}, query_params: %{}, query_string: "", remote_ip: {127, 0, 0, 1}, req_cookies: %{}, req_headers: [{"host", "localhost:4000"}, {"user-agent", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0"}, {"accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}, {"accept-language", "en-US,en;q=0.5"}, {"accept-encoding", "gzip, deflate"}, {"connection", "keep-alive"}, {"upgrade-insecure-requests", "1"}, {"cache-control", "max-age=0"}], request_path: "/signup", resp_body: nil, resp_cookies: %{}, resp_headers: [{"cache-control", "max-age=0, private, must-revalidate"}, {"x-request-id", "nh1puglo6vbm0d94fhg0lci5s8t06fj1"}, {"x-frame-options", "SAMEORIGIN"}, {"x-xss-protection", "1; mode=block"}, {"x-content-type-options", "nosniff"}], scheme: :http, script_name: [], secret_key_base: "KqsZjM8bc4GNGY54/Ab1PvpBdU/t/6FJ5IQQOQvrUo1er8FO3p7dFfJlmxAfAX3U", state: :unset, status: nil}, template_not_found: LuduExpWeb.PageView, view_module: LuduExpWeb.PageView, view_template: "signup.html"}
+
+Assigned keys: [:conn, :template_not_found, :view_module, :view_template]
+
+        (phoenix) lib/phoenix/template.ex:364: Phoenix.Template.raise_template_not_found/3
+        (luduExp) lib/luduExp_web/templates/layout/app.html.eex:29: LuduExpWeb.LayoutView."app.html"/1
+        (phoenix) lib/phoenix/view.ex:332: Phoenix.View.render_to_iodata/3
+        (phoenix) lib/phoenix/controller.ex:740: Phoenix.Controller.do_render/4
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.action/2
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.phoenix_controller_pipeline/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.instrument/4
+        (phoenix) lib/phoenix/router.ex:278: Phoenix.Router.__call__/1
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+        (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+        (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+        (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+[debug] Live reload: lib/luduExp_web/templates/page/login.html.eex
+[debug] Live reload: lib/luduExp_web/templates/page/login.html.eex
+[debug] Live reload: lib/luduExp_web/templates/page/login.html.eex
+Compiling 1 file (.ex)
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 500 in 23ms
+[error] #PID<0.473.0> running LuduExpWeb.Endpoint terminated
+Server: localhost:4000 (http)
+Request: GET /signup
+** (exit) an exception was raised:
+    ** (Phoenix.Template.UndefinedError) Could not render "signup.html" for LuduExpWeb.PageView, please define a matching clause for render/2 or define a template at "lib/luduExp_web/templates/page". The following templates were compiled:
+
+* index.html
+* login.html
+
+Assigns:
+
+%{conn: %Plug.Conn{adapter: {Plug.Adapters.Cowboy.Conn, :...}, assigns: %{layout: {LuduExpWeb.LayoutView, "app.html"}}, before_send: [#Function<0.96292254/1 in Plug.CSRFProtection.call/2>, #Function<4.65855418/1 in Phoenix.Controller.fetch_flash/2>, #Function<0.112984571/1 in Plug.Session.before_send/2>, #Function<1.127390901/1 in Plug.Logger.call/2>, #Function<0.82068639/1 in Phoenix.LiveReloader.before_send_inject_reloader/2>], body_params: %{}, cookies: %{}, halted: false, host: "localhost", method: "GET", owner: #PID<0.473.0>, params: %{}, path_info: ["signup"], path_params: %{}, peer: {{127, 0, 0, 1}, 50554}, port: 4000, private: %{LuduExpWeb.Router => {[], %{}}, :phoenix_action => :signup, :phoenix_controller => LuduExpWeb.PageController, :phoenix_endpoint => LuduExpWeb.Endpoint, :phoenix_flash => %{}, :phoenix_format => "html", :phoenix_layout => {LuduExpWeb.LayoutView, :app}, :phoenix_pipelines => [:browser], :phoenix_router => LuduExpWeb.Router, :phoenix_template => "signup.html", :phoenix_view => LuduExpWeb.PageView, :plug_session => %{}, :plug_session_fetch => :done}, query_params: %{}, query_string: "", remote_ip: {127, 0, 0, 1}, req_cookies: %{}, req_headers: [{"host", "localhost:4000"}, {"user-agent", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0"}, {"accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}, {"accept-language", "en-US,en;q=0.5"}, {"accept-encoding", "gzip, deflate"}, {"connection", "keep-alive"}, {"upgrade-insecure-requests", "1"}, {"cache-control", "max-age=0"}], request_path: "/signup", resp_body: nil, resp_cookies: %{}, resp_headers: [{"cache-control", "max-age=0, private, must-revalidate"}, {"x-request-id", "iibtrbm49f552829o9od7co2mpljg1h1"}, {"x-frame-options", "SAMEORIGIN"}, {"x-xss-protection", "1; mode=block"}, {"x-content-type-options", "nosniff"}], scheme: :http, script_name: [], secret_key_base: "KqsZjM8bc4GNGY54/Ab1PvpBdU/t/6FJ5IQQOQvrUo1er8FO3p7dFfJlmxAfAX3U", state: :unset, status: nil}, template_not_found: LuduExpWeb.PageView, view_module: LuduExpWeb.PageView, view_template: "signup.html"}
+
+Assigned keys: [:conn, :template_not_found, :view_module, :view_template]
+
+        (phoenix) lib/phoenix/template.ex:364: Phoenix.Template.raise_template_not_found/3
+        (luduExp) lib/luduExp_web/templates/layout/app.html.eex:29: LuduExpWeb.LayoutView."app.html"/1
+        (phoenix) lib/phoenix/view.ex:332: Phoenix.View.render_to_iodata/3
+        (phoenix) lib/phoenix/controller.ex:740: Phoenix.Controller.do_render/4
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.action/2
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.phoenix_controller_pipeline/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.instrument/4
+        (phoenix) lib/phoenix/router.ex:278: Phoenix.Router.__call__/1
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+        (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+        (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+        (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+[info] GET /login
+[debug] Processing with LuduExpWeb.PageController.login/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 219µs
+[debug] Live reload: lib/luduExp_web/templates/page/signup.html.eex
+Compiling 1 file (.ex)
+[info] GET /login
+[debug] Processing with LuduExpWeb.PageController.login/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 146µs
+[debug] Live reload: lib/luduExp_web/templates/page/signup.html.eex
+[debug] Live reload: lib/luduExp_web/templates/page/signup.html.eex
+[debug] Live reload: lib/luduExp_web/templates/page/signup.html.eex
+Compiling 1 file (.ex)
+[info] GET /login
+[debug] Processing with LuduExpWeb.PageController.login/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 145µs
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 158µs
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+Compiling 1 file (.ex)
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 174µs
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 244µs
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+Compiling 1 file (.ex)
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 238µs
+[debug] Live reload: lib/luduExp_web/templates/page/index.html.eex
+[debug] Live reload: lib/luduExp_web/templates/page/index.html.eex
+[debug] Live reload: lib/luduExp_web/templates/page/index.html.eex
+Compiling 1 file (.ex)
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 158µs
+[info] GET /index
+[debug] ** (Phoenix.Router.NoRouteError) no route found for GET /index (LuduExpWeb.Router)
+    (luduExp) lib/luduExp_web/router.ex:1: LuduExpWeb.Router.__match_route__/4
+    (luduExp) lib/phoenix/router.ex:303: LuduExpWeb.Router.call/2
+    (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+    (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+    (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+    (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+    (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 145µs
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 160µs
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 181µs
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 1ms
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 161µs
+[debug] Live reload: priv/static/images/compose-icon.svg
+[debug] Live reload: priv/static/images/compose-icon.svg
+[debug] Live reload: priv/static/images/compose-icon.svg
+[debug] Live reload: priv/static/images/logo.svg
+[debug] Live reload: priv/static/images/logo.svg
+[debug] Live reload: priv/static/images/logo.svg
+18:33:15 - info: copied 2 files in 83 ms
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 156µs
+[debug] Live reload: priv/static/images/phoenix.png
+[debug] Live reload: priv/static/images/phoenix.png
+[debug] Live reload: priv/static/images/phoenix.png
+[debug] Live reload: priv/static/images/photo-bg.jpg
+[debug] Live reload: priv/static/images/photo-bg.jpg
+[debug] Live reload: priv/static/images/photo-bg.jpg
+[debug] Live reload: priv/static/images/photo-bg@2x.png
+[debug] Live reload: priv/static/images/photo-bg@2x.png
+[debug] Live reload: priv/static/images/photo-bg@2x.png
+18:33:17 - info: copied 3 files in 172 ms
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 169µs
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 154µs
+[info] GET /login
+[debug] Processing with LuduExpWeb.PageController.login/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 154µs
+[info] GET /login
+[debug] Processing with LuduExpWeb.PageController.login/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 174µs
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 149µs
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 168µs
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 153µs
+^C
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+^Canoop@anoopVB:~/Desktop/elxSpace/luduExp$ ls
+assets  _build  config  deps  lib  mix.exs  mix.lock  priv  README.md  test
+anoop@anoopVB:~/Desktop/elxSpace/luduExp$ cd assets/
+anoop@anoopVB:~/Desktop/elxSpace/luduExp/assets$ ls
+brunch-config.js  js            package.json       static
+css               node_modules  package-lock.json  vendor
+anoop@anoopVB:~/Desktop/elxSpace/luduExp/assets$ npm install sass-brunch --save-dev
+
+> node-sass@3.8.0 install /home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-sass
+> node scripts/install.js
+
+Cannot download "https://github.com/sass/node-sass/releases/download/v3.8.0/linux-x64-57_binding.node":
+
+HTTP error 404 Not Found
+
+Hint: If github.com is not accessible in your location
+      try setting a proxy via HTTP_PROXY, e.g.
+
+      export HTTP_PROXY=http://example.com:1234
+
+or configure npm proxy via
+
+      npm config set proxy http://example.com:8080
+
+> node-sass@3.8.0 postinstall /home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-sass
+> node scripts/build.js
+
+Building: /usr/bin/nodejs /home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-gyp/bin/node-gyp.js rebuild --verbose --libsass_ext= --libsass_cflags= --libsass_ldflags= --libsass_library=
+gyp info it worked if it ends with ok
+gyp verb cli [ '/usr/bin/nodejs',
+gyp verb cli   '/home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-gyp/bin/node-gyp.js',
+gyp verb cli   'rebuild',
+gyp verb cli   '--verbose',
+gyp verb cli   '--libsass_ext=',
+gyp verb cli   '--libsass_cflags=',
+gyp verb cli   '--libsass_ldflags=',
+gyp verb cli   '--libsass_library=' ]
+gyp info using node-gyp@3.6.2
+gyp info using node@8.4.0 | linux | x64
+gyp verb command rebuild []
+gyp verb command clean []
+gyp verb clean removing "build" directory
+gyp verb command configure []
+gyp verb check python checking for Python executable "python2" in the PATH
+gyp verb `which` succeeded python2 /usr/bin/python2
+gyp verb check python version `/usr/bin/python2 -c "import platform; print(platform.python_version());"` returned: "2.7.13\n"
+gyp verb get node dir no --target version specified, falling back to host node version: 8.4.0
+gyp verb command install [ '8.4.0' ]
+gyp verb install input version string "8.4.0"
+gyp verb install installing version: 8.4.0
+gyp verb install --ensure was passed, so won't reinstall if already installed
+gyp verb install version not already installed, continuing with install 8.4.0
+gyp verb ensuring nodedir is created /home/anoop/.node-gyp/8.4.0
+gyp verb created nodedir /home/anoop/.node-gyp
+gyp http GET https://nodejs.org/download/release/v8.4.0/node-v8.4.0-headers.tar.gz
+gyp http 200 https://nodejs.org/download/release/v8.4.0/node-v8.4.0-headers.tar.gz
+gyp verb extracted file from tarball include/node/android-ifaddrs.h
+gyp verb extracted file from tarball include/node/common.gypi
+gyp verb extracted file from tarball include/node/config.gypi
+gyp verb extracted file from tarball include/node/node.h
+gyp verb extracted file from tarball include/node/node_api.h
+gyp verb extracted file from tarball include/node/node_api_types.h
+gyp verb extracted file from tarball include/node/node_buffer.h
+gyp verb extracted file from tarball include/node/node_object_wrap.h
+gyp verb extracted file from tarball include/node/node_version.h
+gyp verb extracted file from tarball include/node/pthread-barrier.h
+gyp verb extracted file from tarball include/node/stdint-msvc2008.h
+gyp verb extracted file from tarball include/node/tree.h
+gyp verb extracted file from tarball include/node/uv-aix.h
+gyp verb extracted file from tarball include/node/uv-bsd.h
+gyp verb extracted file from tarball include/node/uv-darwin.h
+gyp verb extracted file from tarball include/node/uv-errno.h
+gyp verb extracted file from tarball include/node/uv-linux.h
+gyp verb extracted file from tarball include/node/uv-os390.h
+gyp verb extracted file from tarball include/node/uv-posix.h
+gyp verb extracted file from tarball include/node/uv-sunos.h
+gyp verb extracted file from tarball include/node/uv-threadpool.h
+gyp verb extracted file from tarball include/node/uv-unix.h
+gyp verb extracted file from tarball include/node/uv-version.h
+gyp verb extracted file from tarball include/node/uv-win.h
+gyp verb extracted file from tarball include/node/uv.h
+gyp verb extracted file from tarball include/node/v8-debug.h
+gyp verb extracted file from tarball include/node/v8-inspector-protocol.h
+gyp verb extracted file from tarball include/node/v8-inspector.h
+gyp verb extracted file from tarball include/node/v8-platform.h
+gyp verb extracted file from tarball include/node/v8-profiler.h
+gyp verb extracted file from tarball include/node/v8-testing.h
+gyp verb extracted file from tarball include/node/v8-util.h
+gyp verb extracted file from tarball include/node/v8-value-serializer-version.h
+gyp verb extracted file from tarball include/node/v8-version-string.h
+gyp verb extracted file from tarball include/node/v8-version.h
+gyp verb extracted file from tarball include/node/v8.h
+gyp verb extracted file from tarball include/node/v8config.h
+gyp verb extracted file from tarball include/node/zconf.h
+gyp verb extracted file from tarball include/node/zlib.h
+gyp verb extracted file from tarball include/node/openssl/aes.h
+gyp verb extracted file from tarball include/node/openssl/asn1.h
+gyp verb extracted file from tarball include/node/openssl/asn1_mac.h
+gyp verb extracted file from tarball include/node/openssl/asn1t.h
+gyp verb extracted file from tarball include/node/openssl/bio.h
+gyp verb extracted file from tarball include/node/openssl/blowfish.h
+gyp verb extracted file from tarball include/node/openssl/bn.h
+gyp verb extracted file from tarball include/node/openssl/buffer.h
+gyp verb extracted file from tarball include/node/openssl/camellia.h
+gyp verb extracted file from tarball include/node/openssl/cast.h
+gyp verb extracted file from tarball include/node/openssl/cmac.h
+gyp verb extracted file from tarball include/node/openssl/cms.h
+gyp verb content checksum node-v8.4.0-headers.tar.gz 724d091c6610255ece8c310e7e3924f0e675d1486d63bca34e7ac0c8c8e07497
+gyp verb extracted file from tarball include/node/openssl/comp.h
+gyp verb extracted file from tarball include/node/openssl/conf.h
+gyp verb extracted file from tarball include/node/openssl/conf_api.h
+gyp verb extracted file from tarball include/node/openssl/crypto.h
+gyp verb extracted file from tarball include/node/openssl/des.h
+gyp verb extracted file from tarball include/node/openssl/des_old.h
+gyp verb extracted file from tarball include/node/openssl/dh.h
+gyp verb extracted file from tarball include/node/openssl/dsa.h
+gyp verb extracted file from tarball include/node/openssl/dso.h
+gyp verb extracted file from tarball include/node/openssl/dtls1.h
+gyp verb extracted file from tarball include/node/openssl/e_os2.h
+gyp verb extracted file from tarball include/node/openssl/ebcdic.h
+gyp verb extracted file from tarball include/node/openssl/ec.h
+gyp verb extracted file from tarball include/node/openssl/ecdh.h
+gyp verb extracted file from tarball include/node/openssl/ecdsa.h
+gyp verb extracted file from tarball include/node/openssl/engine.h
+gyp verb extracted file from tarball include/node/openssl/err.h
+gyp verb extracted file from tarball include/node/openssl/evp.h
+gyp verb extracted file from tarball include/node/openssl/hmac.h
+gyp verb extracted file from tarball include/node/openssl/idea.h
+gyp verb extracted file from tarball include/node/openssl/krb5_asn.h
+gyp verb extracted file from tarball include/node/openssl/kssl.h
+gyp verb extracted file from tarball include/node/openssl/lhash.h
+gyp verb extracted file from tarball include/node/openssl/md4.h
+gyp verb extracted file from tarball include/node/openssl/md5.h
+gyp verb extracted file from tarball include/node/openssl/mdc2.h
+gyp verb extracted file from tarball include/node/openssl/modes.h
+gyp verb extracted file from tarball include/node/openssl/obj_mac.h
+gyp verb extracted file from tarball include/node/openssl/objects.h
+gyp verb extracted file from tarball include/node/openssl/ocsp.h
+gyp verb extracted file from tarball include/node/openssl/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/opensslv.h
+gyp verb extracted file from tarball include/node/openssl/ossl_typ.h
+gyp verb extracted file from tarball include/node/openssl/pem.h
+gyp verb extracted file from tarball include/node/openssl/pem2.h
+gyp verb extracted file from tarball include/node/openssl/pkcs12.h
+gyp verb extracted file from tarball include/node/openssl/pkcs7.h
+gyp verb extracted file from tarball include/node/openssl/pqueue.h
+gyp verb extracted file from tarball include/node/openssl/rand.h
+gyp verb extracted file from tarball include/node/openssl/rc2.h
+gyp verb extracted file from tarball include/node/openssl/rc4.h
+gyp verb extracted file from tarball include/node/openssl/ripemd.h
+gyp verb extracted file from tarball include/node/openssl/rsa.h
+gyp verb extracted file from tarball include/node/openssl/safestack.h
+gyp verb extracted file from tarball include/node/openssl/seed.h
+gyp verb extracted file from tarball include/node/openssl/sha.h
+gyp verb extracted file from tarball include/node/openssl/srp.h
+gyp verb extracted file from tarball include/node/openssl/srtp.h
+gyp verb extracted file from tarball include/node/openssl/ssl.h
+gyp verb extracted file from tarball include/node/openssl/ssl2.h
+gyp verb extracted file from tarball include/node/openssl/ssl23.h
+gyp verb extracted file from tarball include/node/openssl/ssl3.h
+gyp verb extracted file from tarball include/node/openssl/stack.h
+gyp verb extracted file from tarball include/node/openssl/symhacks.h
+gyp verb extracted file from tarball include/node/openssl/tls1.h
+gyp verb extracted file from tarball include/node/openssl/ts.h
+gyp verb extracted file from tarball include/node/openssl/txt_db.h
+gyp verb extracted file from tarball include/node/openssl/ui.h
+gyp verb extracted file from tarball include/node/openssl/ui_compat.h
+gyp verb extracted file from tarball include/node/openssl/whrlpool.h
+gyp verb extracted file from tarball include/node/openssl/x509.h
+gyp verb extracted file from tarball include/node/openssl/x509_vfy.h
+gyp verb extracted file from tarball include/node/openssl/x509v3.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN64A/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/VC-WIN32/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris64-x86_64-gcc/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/solaris-x86-gcc/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux64-s390x/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux32-s390x/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x86_64/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-x32/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc64/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-ppc/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-elf/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-armv4/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/linux-aarch64/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin64-x86_64-cc/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/darwin-i386-cc/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86_64/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/BSD-x86/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix64-gcc/opensslconf.h
+gyp verb extracted file from tarball include/node/openssl/archs/aix-gcc/opensslconf.h
+gyp verb extracted file from tarball include/node/libplatform/libplatform-export.h
+gyp verb extracted file from tarball include/node/libplatform/libplatform.h
+gyp verb extracted file from tarball include/node/libplatform/v8-tracing.h
+gyp verb tarball done parsing tarball
+gyp verb check download content checksum, need to download `SHASUMS256.txt`...
+gyp verb checksum url https://nodejs.org/download/release/v8.4.0/SHASUMS256.txt
+gyp http GET https://nodejs.org/download/release/v8.4.0/SHASUMS256.txt
+gyp http 200 https://nodejs.org/download/release/v8.4.0/SHASUMS256.txt
+gyp verb checksum data {"node-v8.4.0-aix-ppc64.tar.gz":"9007e961fc9a2a8badb656ebaab52077347113d7618806e7aa502a71eab3f5aa","node-v8.4.0-darwin-x64.tar.gz":"cc10ffbd11586bd27a7cc5e6e2d03fd3e0b341368387a03ee9a0117a0288599d","node-v8.4.0-darwin-x64.tar.xz":"e88e41ff5566f1e79f88d116bcc0013ac423741e85bd40d91775ca8f4e5141a1","node-v8.4.0-headers.tar.gz":"724d091c6610255ece8c310e7e3924f0e675d1486d63bca34e7ac0c8c8e07497","node-v8.4.0-headers.tar.xz":"bd56ece5c3f66492c178f3affb9a9dc0dfbf121dd21b52c9e04071dc2e9b8b61","node-v8.4.0-linux-arm64.tar.gz":"a85225930dadf0b8161f95fe7e0e81e8840a8e20623cb5a7b5c61fced10ed7f0","node-v8.4.0-linux-arm64.tar.xz":"0a811bbe4905fc879f3cbfc976e5a37cca05bbd609774abe4332b29fea75f073","node-v8.4.0-linux-armv6l.tar.gz":"c8812b7cdce2de297d320145dab11e521a6734d0a3f42e67f86f80b1bb5984a0","node-v8.4.0-linux-armv6l.tar.xz":"b11309baa172bbd6b6ffaf0338f9529adcf27fb64e53de65763936b9f1ff924e","node-v8.4.0-linux-armv7l.tar.gz":"11c4e8831c967d152ed098602eaae6fcb0e30ba1f24a9e5781a71c4e7d2314ad","node-v8.4.0-linux-armv7l.tar.xz":"a7e79224d98b0f419bd3af0b751f3e369b12a9fb4405b970fc31e552233ae768","node-v8.4.0-linux-ppc64le.tar.gz":"951a95beb22ccb18543d7ecfe3e81f7f8dfe384dd582789d080d8d56847437a0","node-v8.4.0-linux-ppc64le.tar.xz":"e3fa79996878e340ce6fc39cde5704658bde4315ae1ccd11d34100a9d2637838","node-v8.4.0-linux-ppc64.tar.gz":"038c79f078bbbfa873fe89b6c81f791fb7b82960f55d096dbc0e46a3ead84371","node-v8.4.0-linux-ppc64.tar.xz":"9e32ed12e2abc2a3245237929674c1b91a7e296bb7cb656c31c364e8f3df1613","node-v8.4.0-linux-s390x.tar.gz":"b6a9e13501b94319e133f6726cc75d9a4c50588ce2db4f1b2e01531694b0d7bb","node-v8.4.0-linux-s390x.tar.xz":"5bb1a98dbd9376b7b605450f478de32027afa10e591d0384ba8bab6603ff12f5","node-v8.4.0-linux-x64.tar.gz":"d12bf2389a6b57341528a33de62561edd7ef25c23fbf258d48758fbe3d1d8578","node-v8.4.0-linux-x64.tar.xz":"7fd86abad06f96cb2f889c2a0e25686a3de3e9a078ad946ded91ee4f28d8218a","node-v8.4.0-linux-x86.tar.gz":"9880c5d4c0dc460643fdc5ac1e3092223a3d659e3528842572d75df8565c22fe","node-v8.4.0-linux-x86.tar.xz":"2c5568156e69eca245886c1c583aaab6c26803bc42508aff7271bbcf51710cef","node-v8.4.0.pkg":"d9565d5fa3388e2c62404a0d661a5071ba004c7a2e606dae72680b6c8d9a2c02","node-v8.4.0-sunos-x64.tar.gz":"995de5082fb9ea56c2ab8e2be41d93c283c92efdd2cf735616608a736e2adcb3","node-v8.4.0-sunos-x64.tar.xz":"bc9acc06db8c3f683a29028426d7ffb25570a3f2519d05c16f6991b6994b95e4","node-v8.4.0-sunos-x86.tar.gz":"3e5f462c579beaa0a6685812a663b7d557a1d3e75dd4314d620e7b1e609b8447","node-v8.4.0-sunos-x86.tar.xz":"fd3e432564857ae02f92fb8befe5107435b3a51c0bd92ecf76b936ee066a30aa","node-v8.4.0.tar.gz":"641a15fa822710ef2dc99793fec48d2a8ef75de0040b86568563d4ab296137ef","node-v8.4.0.tar.xz":"5d5aa2a101dcc617231a475812eb8ed87cac21491f1dcc7997b9dd463563f361","node-v8.4.0-win-x64.7z":"09f46de9e0dcfc89a2ed9a67a33a40091125f00779198f4cc8df7876abf743f3","node-v8.4.0-win-x64.zip":"0f60c99479f74d75c7239795c90698826ba8252019d4c23e82ed0d72ceb8974f","node-v8.4.0-win-x86.7z":"cdf4bf3136e2d3a68186297869121a610e26028ade8d6b403f85ba0fe306a341","node-v8.4.0-win-x86.zip":"17692976051182b402943f44458b9f9a433c3405deaa033c6c3b5fd7d43434a8","node-v8.4.0-x64.msi":"8efbd1b94ff8338bd36a1c30a86aba4fae3b80b61e265401fa97e7a4c5478ab2","node-v8.4.0-x86.msi":"6724defb5e3cab388d6777f7d999db979d817f51537309b67adaf06569af198f","win-x64/node.exe":"a1d79afe335d0a8cff2e72100cdadaf6f91f59fcd5a8186da1b99bead9bcd601","win-x64/node.lib":"d714da87f8bb03248cbe4e9891cdfb28ec8fd7ed84fc77a1ea16e38f061fc19c","win-x64/node_pdb.7z":"5d00c65a03e4ae48d3720919bd181ad5aea6f33ebc0f75c485122b84f9ca4fdb","win-x64/node_pdb.zip":"49fb81d624e8e34b06897a0336b3830671c34a867c47a90686fe1006aa9248e9","win-x86/node.exe":"ea9399e1f9eafaf6be6608f1401ebb84cf7444ffadabf0b80ba2c186cf7028fa","win-x86/node.lib":"28b8412ede7f9ab889680cb5819896e852a466ea176b6d06bba612b39ebfb272","win-x86/node_pdb.7z":"454b4baa220e4980613345ce057474f311fd6bce91cc6322cf66ac535c44d4ce","win-x86/node_pdb.zip":"21cf63479cb6c781a9cbda87f7dbc5abafb815abc3bd59deb4c0755e23190659"}
+gyp verb download contents checksum {"node-v8.4.0-headers.tar.gz":"724d091c6610255ece8c310e7e3924f0e675d1486d63bca34e7ac0c8c8e07497"}
+gyp verb validating download checksum for node-v8.4.0-headers.tar.gz (724d091c6610255ece8c310e7e3924f0e675d1486d63bca34e7ac0c8c8e07497 == 724d091c6610255ece8c310e7e3924f0e675d1486d63bca34e7ac0c8c8e07497)
+gyp verb get node dir target node version installed: 8.4.0
+gyp verb build dir attempting to create "build" dir: /home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-sass/build
+gyp verb build dir "build" dir needed to be created? /home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-sass/build
+gyp verb build/config.gypi creating config file
+gyp verb build/config.gypi writing out config file: /home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-sass/build/config.gypi
+gyp verb config.gypi checking for gypi file: /home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-sass/config.gypi
+gyp verb common.gypi checking for gypi file: /home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-sass/common.gypi
+gyp verb gyp gyp format was not specified; forcing "make"
+gyp info spawn /usr/bin/python2
+gyp info spawn args [ '/home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-gyp/gyp/gyp_main.py',
+gyp info spawn args   'binding.gyp',
+gyp info spawn args   '-f',
+gyp info spawn args   'make',
+gyp info spawn args   '-I',
+gyp info spawn args   '/home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-sass/build/config.gypi',
+gyp info spawn args   '-I',
+gyp info spawn args   '/home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-gyp/addon.gypi',
+gyp info spawn args   '-I',
+gyp info spawn args   '/home/anoop/.node-gyp/8.4.0/include/node/common.gypi',
+gyp info spawn args   '-Dlibrary=shared_library',
+gyp info spawn args   '-Dvisibility=default',
+gyp info spawn args   '-Dnode_root_dir=/home/anoop/.node-gyp/8.4.0',
+gyp info spawn args   '-Dnode_gyp_dir=/home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-gyp',
+gyp info spawn args   '-Dnode_lib_file=/home/anoop/.node-gyp/8.4.0/<(target_arch)/node.lib',
+gyp info spawn args   '-Dmodule_root_dir=/home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-sass',
+gyp info spawn args   '-Dnode_engine=v8',
+gyp info spawn args   '--depth=.',
+gyp info spawn args   '--no-parallel',
+gyp info spawn args   '--generator-output',
+gyp info spawn args   'build',
+gyp info spawn args   '-Goutput_dir=.' ]
+gyp verb command build []
+gyp verb build type Release
+gyp verb architecture x64
+gyp verb node dev dir /home/anoop/.node-gyp/8.4.0
+gyp verb `which` succeeded for `make` /usr/bin/make
+gyp info spawn make
+gyp info spawn args [ 'V=1', 'BUILDTYPE=Release', '-C', 'build' ]
+make: Entering directory '/home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-sass/build'
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/ast.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/ast.o ../src/libsass/src/ast.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/base64vlq.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/base64vlq.o ../src/libsass/src/base64vlq.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/bind.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/bind.o ../src/libsass/src/bind.cpp
+  cc '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer  -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/cencode.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/cencode.o ../src/libsass/src/cencode.c
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/color_maps.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/color_maps.o ../src/libsass/src/color_maps.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/constants.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/constants.o ../src/libsass/src/constants.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/context.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/context.o ../src/libsass/src/context.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/cssize.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/cssize.o ../src/libsass/src/cssize.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/emitter.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/emitter.o ../src/libsass/src/emitter.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/environment.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/environment.o ../src/libsass/src/environment.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/error_handling.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/error_handling.o ../src/libsass/src/error_handling.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/eval.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/eval.o ../src/libsass/src/eval.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/expand.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/expand.o ../src/libsass/src/expand.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/extend.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/extend.o ../src/libsass/src/extend.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/file.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/file.o ../src/libsass/src/file.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/functions.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/functions.o ../src/libsass/src/functions.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/inspect.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/inspect.o ../src/libsass/src/inspect.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/json.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/json.o ../src/libsass/src/json.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/lexer.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/lexer.o ../src/libsass/src/lexer.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/listize.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/listize.o ../src/libsass/src/listize.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/memory_manager.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/memory_manager.o ../src/libsass/src/memory_manager.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/node.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/node.o ../src/libsass/src/node.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/output.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/output.o ../src/libsass/src/output.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/parser.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/parser.o ../src/libsass/src/parser.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/plugins.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/plugins.o ../src/libsass/src/plugins.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/position.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/position.o ../src/libsass/src/position.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/prelexer.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/prelexer.o ../src/libsass/src/prelexer.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/remove_placeholders.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/remove_placeholders.o ../src/libsass/src/remove_placeholders.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/sass.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/sass.o ../src/libsass/src/sass.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/sass2scss.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/sass2scss.o ../src/libsass/src/sass2scss.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/sass_context.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/sass_context.o ../src/libsass/src/sass_context.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/sass_functions.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/sass_functions.o ../src/libsass/src/sass_functions.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/sass_util.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/sass_util.o ../src/libsass/src/sass_util.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/sass_values.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/sass_values.o ../src/libsass/src/sass_values.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/source_map.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/source_map.o ../src/libsass/src/source_map.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/to_c.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/to_c.o ../src/libsass/src/to_c.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/to_value.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/to_value.o ../src/libsass/src/to_value.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/units.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/units.o ../src/libsass/src/units.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/utf8_string.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/utf8_string.o ../src/libsass/src/utf8_string.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/util.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/util.o ../src/libsass/src/util.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=libsass' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DLIBSASS_VERSION="3.3.6"' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -std=gnu++0x -std=c++0x -fexceptions -frtti -MMD -MF ./Release/.deps/Release/obj.target/libsass/src/libsass/src/values.o.d.raw   -c -o Release/obj.target/libsass/src/libsass/src/values.o ../src/libsass/src/values.cpp
+  rm -f Release/obj.target/src/sass.a && ar crs Release/obj.target/src/sass.a Release/obj.target/libsass/src/libsass/src/ast.o Release/obj.target/libsass/src/libsass/src/base64vlq.o Release/obj.target/libsass/src/libsass/src/bind.o Release/obj.target/libsass/src/libsass/src/cencode.o Release/obj.target/libsass/src/libsass/src/color_maps.o Release/obj.target/libsass/src/libsass/src/constants.o Release/obj.target/libsass/src/libsass/src/context.o Release/obj.target/libsass/src/libsass/src/cssize.o Release/obj.target/libsass/src/libsass/src/emitter.o Release/obj.target/libsass/src/libsass/src/environment.o Release/obj.target/libsass/src/libsass/src/error_handling.o Release/obj.target/libsass/src/libsass/src/eval.o Release/obj.target/libsass/src/libsass/src/expand.o Release/obj.target/libsass/src/libsass/src/extend.o Release/obj.target/libsass/src/libsass/src/file.o Release/obj.target/libsass/src/libsass/src/functions.o Release/obj.target/libsass/src/libsass/src/inspect.o Release/obj.target/libsass/src/libsass/src/json.o Release/obj.target/libsass/src/libsass/src/lexer.o Release/obj.target/libsass/src/libsass/src/listize.o Release/obj.target/libsass/src/libsass/src/memory_manager.o Release/obj.target/libsass/src/libsass/src/node.o Release/obj.target/libsass/src/libsass/src/output.o Release/obj.target/libsass/src/libsass/src/parser.o Release/obj.target/libsass/src/libsass/src/plugins.o Release/obj.target/libsass/src/libsass/src/position.o Release/obj.target/libsass/src/libsass/src/prelexer.o Release/obj.target/libsass/src/libsass/src/remove_placeholders.o Release/obj.target/libsass/src/libsass/src/sass.o Release/obj.target/libsass/src/libsass/src/sass2scss.o Release/obj.target/libsass/src/libsass/src/sass_context.o Release/obj.target/libsass/src/libsass/src/sass_functions.o Release/obj.target/libsass/src/libsass/src/sass_util.o Release/obj.target/libsass/src/libsass/src/sass_values.o Release/obj.target/libsass/src/libsass/src/source_map.o Release/obj.target/libsass/src/libsass/src/to_c.o Release/obj.target/libsass/src/libsass/src/to_value.o Release/obj.target/libsass/src/libsass/src/units.o Release/obj.target/libsass/src/libsass/src/utf8_string.o Release/obj.target/libsass/src/libsass/src/util.o Release/obj.target/libsass/src/libsass/src/values.o
+  rm -rf "Release/sass.a" && cp -af "Release/obj.target/src/sass.a" "Release/sass.a"
+  g++ '-DNODE_GYP_MODULE_NAME=binding' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DBUILDING_NODE_EXTENSION' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../../nan -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -fno-rtti -fno-exceptions -std=gnu++0x -std=c++0x -MMD -MF ./Release/.deps/Release/obj.target/binding/src/binding.o.d.raw   -c -o Release/obj.target/binding/src/binding.o ../src/binding.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=binding' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DBUILDING_NODE_EXTENSION' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../../nan -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -fno-rtti -fno-exceptions -std=gnu++0x -std=c++0x -MMD -MF ./Release/.deps/Release/obj.target/binding/src/create_string.o.d.raw   -c -o Release/obj.target/binding/src/create_string.o ../src/create_string.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=binding' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DBUILDING_NODE_EXTENSION' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../../nan -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -fno-rtti -fno-exceptions -std=gnu++0x -std=c++0x -MMD -MF ./Release/.deps/Release/obj.target/binding/src/custom_function_bridge.o.d.raw   -c -o Release/obj.target/binding/src/custom_function_bridge.o ../src/custom_function_bridge.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=binding' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DBUILDING_NODE_EXTENSION' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../../nan -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -fno-rtti -fno-exceptions -std=gnu++0x -std=c++0x -MMD -MF ./Release/.deps/Release/obj.target/binding/src/custom_importer_bridge.o.d.raw   -c -o Release/obj.target/binding/src/custom_importer_bridge.o ../src/custom_importer_bridge.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=binding' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DBUILDING_NODE_EXTENSION' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../../nan -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -fno-rtti -fno-exceptions -std=gnu++0x -std=c++0x -MMD -MF ./Release/.deps/Release/obj.target/binding/src/sass_context_wrapper.o.d.raw   -c -o Release/obj.target/binding/src/sass_context_wrapper.o ../src/sass_context_wrapper.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=binding' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DBUILDING_NODE_EXTENSION' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../../nan -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -fno-rtti -fno-exceptions -std=gnu++0x -std=c++0x -MMD -MF ./Release/.deps/Release/obj.target/binding/src/sass_types/boolean.o.d.raw   -c -o Release/obj.target/binding/src/sass_types/boolean.o ../src/sass_types/boolean.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=binding' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DBUILDING_NODE_EXTENSION' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../../nan -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -fno-rtti -fno-exceptions -std=gnu++0x -std=c++0x -MMD -MF ./Release/.deps/Release/obj.target/binding/src/sass_types/color.o.d.raw   -c -o Release/obj.target/binding/src/sass_types/color.o ../src/sass_types/color.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=binding' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DBUILDING_NODE_EXTENSION' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../../nan -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -fno-rtti -fno-exceptions -std=gnu++0x -std=c++0x -MMD -MF ./Release/.deps/Release/obj.target/binding/src/sass_types/error.o.d.raw   -c -o Release/obj.target/binding/src/sass_types/error.o ../src/sass_types/error.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=binding' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DBUILDING_NODE_EXTENSION' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../../nan -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -fno-rtti -fno-exceptions -std=gnu++0x -std=c++0x -MMD -MF ./Release/.deps/Release/obj.target/binding/src/sass_types/factory.o.d.raw   -c -o Release/obj.target/binding/src/sass_types/factory.o ../src/sass_types/factory.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=binding' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DBUILDING_NODE_EXTENSION' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../../nan -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -fno-rtti -fno-exceptions -std=gnu++0x -std=c++0x -MMD -MF ./Release/.deps/Release/obj.target/binding/src/sass_types/list.o.d.raw   -c -o Release/obj.target/binding/src/sass_types/list.o ../src/sass_types/list.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=binding' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DBUILDING_NODE_EXTENSION' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../../nan -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -fno-rtti -fno-exceptions -std=gnu++0x -std=c++0x -MMD -MF ./Release/.deps/Release/obj.target/binding/src/sass_types/map.o.d.raw   -c -o Release/obj.target/binding/src/sass_types/map.o ../src/sass_types/map.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=binding' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DBUILDING_NODE_EXTENSION' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../../nan -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -fno-rtti -fno-exceptions -std=gnu++0x -std=c++0x -MMD -MF ./Release/.deps/Release/obj.target/binding/src/sass_types/null.o.d.raw   -c -o Release/obj.target/binding/src/sass_types/null.o ../src/sass_types/null.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=binding' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DBUILDING_NODE_EXTENSION' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../../nan -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -fno-rtti -fno-exceptions -std=gnu++0x -std=c++0x -MMD -MF ./Release/.deps/Release/obj.target/binding/src/sass_types/number.o.d.raw   -c -o Release/obj.target/binding/src/sass_types/number.o ../src/sass_types/number.cpp
+  g++ '-DNODE_GYP_MODULE_NAME=binding' '-DUSING_UV_SHARED=1' '-DUSING_V8_SHARED=1' '-DV8_DEPRECATION_WARNINGS=1' '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DBUILDING_NODE_EXTENSION' -I/home/anoop/.node-gyp/8.4.0/include/node -I/home/anoop/.node-gyp/8.4.0/src -I/home/anoop/.node-gyp/8.4.0/deps/uv/include -I/home/anoop/.node-gyp/8.4.0/deps/v8/include -I../../nan -I../src/libsass/include  -fPIC -pthread -Wall -Wextra -Wno-unused-parameter -m64 -O3 -fno-omit-frame-pointer -fno-rtti -fno-exceptions -std=gnu++0x -std=c++0x -MMD -MF ./Release/.deps/Release/obj.target/binding/src/sass_types/string.o.d.raw   -c -o Release/obj.target/binding/src/sass_types/string.o ../src/sass_types/string.cpp
+  g++ -shared -pthread -rdynamic -m64  -Wl,-soname=binding.node -o Release/obj.target/binding.node -Wl,--start-group Release/obj.target/binding/src/binding.o Release/obj.target/binding/src/create_string.o Release/obj.target/binding/src/custom_function_bridge.o Release/obj.target/binding/src/custom_importer_bridge.o Release/obj.target/binding/src/sass_context_wrapper.o Release/obj.target/binding/src/sass_types/boolean.o Release/obj.target/binding/src/sass_types/color.o Release/obj.target/binding/src/sass_types/error.o Release/obj.target/binding/src/sass_types/factory.o Release/obj.target/binding/src/sass_types/list.o Release/obj.target/binding/src/sass_types/map.o Release/obj.target/binding/src/sass_types/null.o Release/obj.target/binding/src/sass_types/number.o Release/obj.target/binding/src/sass_types/string.o Release/obj.target/src/sass.a -Wl,--end-group
+  rm -rf "Release/binding.node" && cp -af "Release/obj.target/binding.node" "Release/binding.node"
+make: Leaving directory '/home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-sass/build'
+gyp info ok
+Installed in "/home/anoop/Desktop/elxSpace/luduExp/assets/node_modules/node-sass/vendor/linux-x64-57/binding.node"
+npm WARN assets No description
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.1.2 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ sass-brunch@2.10.4
+added 299 packages in 186.471s
+anoop@anoopVB:~/Desktop/elxSpace/luduExp/assets$ cd ..
+anoop@anoopVB:~/Desktop/elxSpace/luduExp$ mix phx.server
+[info] Running LuduExpWeb.Endpoint with Cowboy using http://0.0.0.0:4000
+19:17:33 - info: compiled 6 files into 2 files, copied 7 in 2.6 sec
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 142ms
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 207µs
+[debug] Live reload: priv/static/css/app.css
+[debug] Live reload: priv/static/css/app.css
+[debug] Live reload: priv/static/css/app.css
+19:20:54 - info: compiled header.scss and 2 cached files into app.css in 89 ms
+[debug] Live reload: priv/static/css/app.css
+[debug] Live reload: priv/static/css/app.css
+[debug] Live reload: priv/static/css/app.css
+19:20:58 - info: compiled header.scss and 2 cached files into app.css in 94 ms
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 193µs
+[debug] Live reload: priv/static/css/app.css
+[debug] Live reload: priv/static/css/app.css
+[debug] Live reload: priv/static/css/app.css
+19:21:56 - info: compiled header.scss and 2 cached files into app.css in 114 ms
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 156µs
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 184µs
+[info] GET /login
+[debug] Processing with LuduExpWeb.PageController.login/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 183µs
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 218µs
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 162µs
+[info] GET /css/header.css
+[debug] ** (Phoenix.Router.NoRouteError) no route found for GET /css/header.css (LuduExpWeb.Router)
+    (luduExp) lib/luduExp_web/router.ex:1: LuduExpWeb.Router.__match_route__/4
+    (luduExp) lib/phoenix/router.ex:303: LuduExpWeb.Router.call/2
+    (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+    (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+    (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+    (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+    (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 228µs
+[info] GET /css/header.css
+[debug] ** (Phoenix.Router.NoRouteError) no route found for GET /css/header.css (LuduExpWeb.Router)
+    (luduExp) lib/luduExp_web/router.ex:1: LuduExpWeb.Router.__match_route__/4
+    (luduExp) lib/phoenix/router.ex:303: LuduExpWeb.Router.call/2
+    (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+    (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+    (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+    (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+    (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+
+[debug] Live reload: lib/luduExp_web/templates/layout/app.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 163µs
+[debug] Live reload: priv/static/css/app.css
+[debug] Live reload: priv/static/css/app.css
+[debug] Live reload: priv/static/css/app.css
+19:28:02 - info: removed phoenix_notuse.css and wrote 3 cached files into app.css in 114 ms
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 165µs
+[debug] Live reload: priv/static/css/app.css
+[debug] Live reload: priv/static/css/app.css
+[debug] Live reload: priv/static/css/app.css
+19:28:47 - info: compiled header.scss and 1 cached file into app.css in 73 ms
+^C
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+^Canoop@anoopVB:~/Desktop/elxSpace/luduExp$ mix phx.server
+[info] Running LuduExpWeb.Endpoint with Cowboy using http://0.0.0.0:4000
+19:29:02 - info: compiled 6 files into 2 files, copied 7 in 1.2 sec
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 130ms
+^C
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+^Canoop@anoopVB:~/Desktop/elxSpace/luduExp$ mix phx.gen.schema User users userna:string email:string encrypted_password:string
+* creating lib/luduExp/user.ex
+* creating priv/repo/migrations/20170823153634_create_users.exs
+
+Remember to update your repository by running migrations:
+
+    $ mix ecto.migrate
+
+anoop@anoopVB:~/Desktop/elxSpace/luduExp$ mix ecto.migrate
+Compiling 1 file (.ex)
+Generated luduExp app
+[info] == Running LuduExp.Repo.Migrations.CreateUsers.change/0 forward
+[info] create table users
+[info] create index users_username_index
+[info] create index users_email_index
+[info] == Migrated in 0.0s
+anoop@anoopVB:~/Desktop/elxSpace/luduExp$ iex -S mix
+Erlang/OTP 20 [erts-9.0] [source] [64-bit] [smp:1:1] [ds:1:1:10] [async-threads:10] [kernel-poll:false]
+
+Failed to watch /home/anoop/Desktop/elxSpace/luduExp; upper limit on inotify watches reached!
+             Please increase the amount of inotify watches allowed per user via `/proc/sys/fs/inotify/max_user_watches'.
+                                        Interactive Elixir (1.5.1) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> user =
+...(1)>
+...(1)>
+...(1)>
+...(1)>
+...(1)>
+...(1)>
+...(1)>
+...(1)>
+...(1)>
+...(1)>
+...(1)>
+...(1)>
+...(1)>
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+^Canoop@anoopVB:~/Desktop/elxSpace/luduExp$ iex -S mix
+Erlang/OTP 20 [erts-9.0] [source] [64-bit] [smp:1:1] [ds:1:1:10] [async-threads:10] [kernel-poll:false]
+
+Failed to watch /home/anoop/Desktop/elxSpace/luduExp; upper limit on inotify watches reached!
+             Please increase the amount of inotify watches allowed per user via `/proc/sys/fs/inotify/max_user_watches'.
+                                        Interactive Elixir (1.5.1) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> user = %LuduExp.User{}
+%LuduExp.User{__meta__: #Ecto.Schema.Metadata<:built, "users">, email: nil,
+ encrypted_password: nil, id: nil, inserted_at: nil, updated_at: nil,
+ username: nil}
+iex(2)> user_change = Ecto.Changeset.change(user)
+#Ecto.Changeset<action: nil, changes: %{}, errors: [], data: #LuduExp.User<>,
+ valid?: true>
+iex(3)> user_change = Ecto.Changeset.change(user_change, %{username: "ANOOP YASEEN"})
+#Ecto.Changeset<action: nil, changes: %{username: "ANOOP YASEEN"}, errors: [],
+ data: #LuduExp.User<>, valid?: true>
+iex(4)> user_change = Ecto.Changeset.validate_required(user_change, :email)     #Ecto.Changeset<action: nil, changes: %{username: "ANOOP YASEEN"},
+ errors: [email: {"can't be blank", [validation: :required]}],
+ data: #LuduExp.User<>, valid?: false>
+iex(5)> LuduExp.Repo.insert(user_change)
+{:error,
+ #Ecto.Changeset<action: :insert, changes: %{username: "ANOOP YASEEN"},
+  errors: [email: {"can't be blank", [validation: :required]}],
+  data: #LuduExp.User<>, valid?: false>}
+iex(6)> LuduExp.Accounts.create_user
+** (UndefinedFunctionError) function LuduExp.Accounts.create_user/0 is undefined (module LuduExp.Accounts is not available)
+    LuduExp.Accounts.create_user()
+iex(6)> LuduExp.Accounts.create_user(%User{})
+** (CompileError) iex:6: User.__struct__/1 is undefined, cannot expand struct User
+
+iex(6)> LuduExp.Accounts.create_user("Star")
+** (UndefinedFunctionError) function LuduExp.Accounts.create_user/1 is undefined (module LuduExp.Accounts is not available)
+    LuduExp.Accounts.create_user("Star")
+iex(6)> LuduExp.Accounts.create_user("Star")
+** (UndefinedFunctionError) function LuduExp.Accounts.create_user/1 is undefined (module LuduExp.Accounts is not available)
+    LuduExp.Accounts.create_user("Star")
+iex(6)> mix recompile
+** (CompileError) iex:6: undefined function mix/1
+
+iex(6)>
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+^Canoop@anoopVB:~/Desktop/elxSpace/luduExp$ iex -S mix
+Erlang/OTP 20 [erts-9.0] [source] [64-bit] [smp:1:1] [ds:1:1:10] [async-threads:10] [kernel-poll:false]
+
+Compiling 1 file (.ex)
+Generated luduExp app
+Failed to watch /home/anoop/Desktop/elxSpace/luduExp; upper limit on inotify watches reached!
+             Please increase the amount of inotify watches allowed per user via `/proc/sys/fs/inotify/max_user_watches'.
+                                        Interactive Elixir (1.5.1) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> LuduExp.Accounts.create_user("Star")
+** (ArgumentError) argument error
+    :erlang.apply("Star", :username, [])
+    (luduExp) lib/luduExp/accounts.ex:12: LuduExp.Accounts.create_user/1
+iex(1)> LuduExp.Accounts.create_user(%LuduExp.User{})
+#Ecto.Changeset<action: nil, changes: %{},
+ errors: [email: {"can't be blank", [validation: :required]}],
+ data: #LuduExp.User<>, valid?: false>
+iex(2)> LuduExp.Accounts.create_user(%{username: "ANOOP YASEEN"})
+#Ecto.Changeset<action: nil, changes: %{username: "ANOOP YASEEN"},
+ errors: [email: {"can't be blank", [validation: :required]}],
+ data: #LuduExp.User<>, valid?: false>
+iex(3)> recompile
+Compiling 1 file (.ex)
+warning: variable "user_changeset" does not exist and is being expanded to "user_changeset()", please use parentheses to remove the ambiguity or change the variable name
+  lib/luduExp/accounts.ex:10
+
+
+== Compilation error in file lib/luduExp/accounts.ex ==
+** (CompileError) lib/luduExp/accounts.ex:10: undefined function user_changeset/0
+    (stdlib) lists.erl:1338: :lists.foreach/2
+    (stdlib) erl_eval.erl:670: :erl_eval.do_apply/6
+    (elixir) lib/kernel/parallel_compiler.ex:121: anonymous fn/4 in Kernel.ParallelCompiler.spawn_compilers/1
+** (exit) shutdown: 1
+    (elixir) lib/kernel/parallel_compiler.ex:325: Kernel.ParallelCompiler.terminate/1
+    (elixir) lib/kernel/parallel_compiler.ex:65: Kernel.ParallelCompiler.spawn_compilers/3
+    (mix) lib/mix/compilers/elixir.ex:159: Mix.Compilers.Elixir.compile_manifest/8
+    (mix) lib/mix/compilers/elixir.ex:86: Mix.Compilers.Elixir.compile/6
+    (mix) lib/mix/tasks/compile.elixir.ex:68: Mix.Tasks.Compile.Elixir.run/1
+    (mix) lib/mix/task.ex:301: Mix.Task.run_task/3
+    (elixir) lib/enum.ex:1255: Enum."-map/2-lists^map/1-0-"/2
+    (elixir) lib/enum.ex:1255: Enum."-map/2-lists^map/1-0-"/2
+    (mix) lib/mix/tasks/compile.all.ex:19: anonymous fn/1 in Mix.Tasks.Compile.All.run/1
+    (mix) lib/mix/tasks/compile.all.ex:37: Mix.Tasks.Compile.All.with_logger_app/1
+    (mix) lib/mix/task.ex:301: Mix.Task.run_task/3
+    (mix) lib/mix/tasks/compile.ex:85: Mix.Tasks.Compile.run/1
+    (mix) lib/mix/task.ex:301: Mix.Task.run_task/3
+    (iex) lib/iex/helpers.ex:92: IEx.Helpers.recompile/0
+iex(3)> recompile()
+Compiling 1 file (.ex)
+warning: variable "user_changeset" does not exist and is being expanded to "user_changeset()", please use parentheses to remove the ambiguity or change the variable name
+  lib/luduExp/accounts.ex:10
+
+
+== Compilation error in file lib/luduExp/accounts.ex ==
+** (CompileError) lib/luduExp/accounts.ex:10: undefined function user_changeset/0
+    (stdlib) lists.erl:1338: :lists.foreach/2
+    (stdlib) erl_eval.erl:670: :erl_eval.do_apply/6
+    (elixir) lib/kernel/parallel_compiler.ex:121: anonymous fn/4 in Kernel.ParallelCompiler.spawn_compilers/1
+** (exit) shutdown: 1
+    (elixir) lib/kernel/parallel_compiler.ex:325: Kernel.ParallelCompiler.terminate/1
+    (elixir) lib/kernel/parallel_compiler.ex:65: Kernel.ParallelCompiler.spawn_compilers/3
+    (mix) lib/mix/compilers/elixir.ex:159: Mix.Compilers.Elixir.compile_manifest/8
+    (mix) lib/mix/compilers/elixir.ex:86: Mix.Compilers.Elixir.compile/6
+    (mix) lib/mix/tasks/compile.elixir.ex:68: Mix.Tasks.Compile.Elixir.run/1
+    (mix) lib/mix/task.ex:301: Mix.Task.run_task/3
+    (elixir) lib/enum.ex:1255: Enum."-map/2-lists^map/1-0-"/2
+    (elixir) lib/enum.ex:1255: Enum."-map/2-lists^map/1-0-"/2
+    (mix) lib/mix/tasks/compile.all.ex:19: anonymous fn/1 in Mix.Tasks.Compile.All.run/1
+    (mix) lib/mix/tasks/compile.all.ex:37: Mix.Tasks.Compile.All.with_logger_app/1
+    (mix) lib/mix/task.ex:301: Mix.Task.run_task/3
+    (mix) lib/mix/tasks/compile.ex:85: Mix.Tasks.Compile.run/1
+    (mix) lib/mix/task.ex:301: Mix.Task.run_task/3
+    (iex) lib/iex/helpers.ex:92: IEx.Helpers.recompile/0
+iex(3)> recompile()
+Compiling 1 file (.ex)
+:ok
+iex(4)> params = %{username: "ANOOP YASEEN", email: "anoop.yas@sf.com", password:"1234"}
+** (SyntaxError) iex:4: keyword argument must be followed by space after: password:
+
+iexiex(4)> params = %{username: "ANOOP YASEEN", email: "anoop.yas@sf.com ", password:"1234"}
+** (SyntaxError) iex:4: keyword argument must be followed by space after: password:
+
+iex(4)> params = %{username: "ANOOP YASEEN", email: "anoop.yas@sf.com ", password: "1234"}
+%{email: "anoop.yas@sf.com ", password: "1234", username: "ANOOP YASEEN"}
+iex(5)> LuduExp.Accounts.create_user(params)
+** (ArgumentError) unknown field `password`. Only fields, embeds and associations (except :through ones) are supported in changesets
+    (ecto) lib/ecto/changeset.ex:489: Ecto.Changeset.type!/2
+    (ecto) lib/ecto/changeset.ex:464: Ecto.Changeset.process_param/7
+    (elixir) lib/enum.ex:1811: Enum."-reduce/3-lists^foldl/2-0-"/3
+    (ecto) lib/ecto/changeset.ex:449: Ecto.Changeset.cast/6
+    (luduExp) lib/luduExp/accounts.ex:9: LuduExp.Accounts.create_user/1
+iex(5)> recompile
+Compiling 2 files (.ex)
+:ok
+iex(6)> LuduExp.Accounts.create_user(params)
+#Ecto.Changeset<action: nil,
+ changes: %{email: "anoop.yas@sf.com ", password: "1234",
+   username: "ANOOP YASEEN"}, errors: [], data: #LuduExp.User<>, valid?: true>
+iex(7)> recompile                                                               Compiling 2 files (.ex)
+:ok
+iex(8)> LuduExp.Accounts.create_user(params)
+#Ecto.Changeset<action: nil,
+ changes: %{email: "anoop.yas@sf.com ", password: "1234",
+   username: "ANOOP YASEEN"}, errors: [], data: #LuduExp.User<>, valid?: true>
+iex(9)> LuduExp.Accounts.create_user(params)
+#Ecto.Changeset<action: nil,
+ changes: %{email: "anoop.yas@sf.com ", password: "1234",
+   username: "ANOOP YASEEN"}, errors: [], data: #LuduExp.User<>, valid?: true>
+iex(10)> LuduExp.Accounts.create_user(params)
+#Ecto.Changeset<action: nil,
+ changes: %{email: "anoop.yas@sf.com ", password: "1234",
+   username: "ANOOP YASEEN"}, errors: [], data: #LuduExp.User<>, valid?: true>
+iex(11)> recompile
+Compiling 2 files (.ex)
+:ok
+iex(12)> LuduExp.Accounts.create_user(params)
+[debug] QUERY OK db=8.8ms
+INSERT INTO "users" ("email","username","inserted_at","updated_at") VALUES ($1,$2,$3,$4) RETURNING "id" ["anoop.yas@sf.com ", "ANOOP YASEEN", {{2017, 8, 23}, {16, 42, 28, 41481}}, {{2017, 8, 23}, {16, 42, 28, 44913}}]
+{:ok,
+ %LuduExp.User{__meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  email: "anoop.yas@sf.com ", encrypted_password: nil, id: 1,
+  inserted_at: ~N[2017-08-23 16:42:28.041481], password: "1234",
+  updated_at: ~N[2017-08-23 16:42:28.044913], username: "ANOOP YASEEN"}}
+iex(13)>
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+^Canoop@anoopVB:~/Desktop/elxSpace/luduExpmix phx.server
+Compiling 2 files (.ex)
+
+== Compilation error in file lib/luduExp/accounts/user.ex ==
+** (CompileError) lib/luduExp/accounts/user.ex:17: LuduExp.User.__struct__/0 is undefined, cannot expand struct LuduExp.User
+    lib/luduExp/accounts/user.ex:17: (module)
+    (stdlib) erl_eval.erl:670: :erl_eval.do_apply/6
+    (elixir) lib/kernel/parallel_compiler.ex:121: anonymous fn/4 in Kernel.ParallelCompiler.spawn_compilers/1
+anoop@anoopVB:~/Desktop/elxSpace/luduExp$ mix phx.server
+Compiling 2 files (.ex)
+Generated luduExp app
+Failed to watch /home/anoop/Desktop/elxSpace/luduExp; upper limit on inotify watches reached!
+Please increase the amount of inotify watches allowed per user via `/proc/sys/fs/inotify/max_user_watches'.
+[info] Running LuduExpWeb.Endpoint with Cowboy using http://0.0.0.0:4000
+20:47:20 - info: compiled 6 files into 2 files, copied 7 in 2.5 sec
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 145ms
+^C
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+^Canoop@anoopVB:~/Desktop/elxSpace/luduExp$ iex -S mix
+Erlang/OTP 20 [erts-9.0] [source] [64-bit] [smp:1:1] [ds:1:1:10] [async-threads:10] [kernel-poll:false]
+
+Compiling 2 files (.ex)
+warning: unused import Ecto.Changeset
+  lib/luduExp/accounts/accounts.ex:3
+
+Failed to watch /home/anoop/Desktop/elxSpace/luduExp; upper limit on inotify watches reached!
+             Please increase the amount of inotify watches allowed per user via `/proc/sys/fs/inotify/max_user_watches'.
+                                        Interactive Elixir (1.5.1) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> recompile
+Compiling 1 file (.ex)
+:ok
+iex(2)> params = %{username: "ABECD", email: "SEDSS.yas@sf.com", password:"1234"}
+** (SyntaxError) iex:2: keyword argument must be followed by space after: password:
+
+iex(2)> params = %{username: "ABECD", email: "SEDSS.yas@sf.com", password: rd:"1234"}
+** (SyntaxError) iex:2: keyword argument must be followed by space after: rd:
+
+iex(2)> params = %{username: "ABECD", email: "SEDSS.yas@sf.com", password: "123"}
+%{email: "SEDSS.yas@sf.com", pasrd: "123", username: "ABECD"}
+iex(3)> LuduExp.Accounts.create_user(params)
+{:error,
+ #Ecto.Changeset<action: :insert,
+  changes: %{email: "SEDSS.yas@sf.com", username: "ABECD"},
+  errors: [encrypted_password: {"can't be blank", [validation: :required]}],
+  data: #LuduExp.Accounts.User<>, valid?: false>}
+iex(4)> LuduExp.Accounts.create_user(params)
+{:error,
+ #Ecto.Changeset<action: :insert,
+  changes: %{email: "SEDSS.yas@sf.com", username: "ABECD"},
+  errors: [encrypted_password: {"can't be blank", [validation: :required]}],
+  data: #LuduExp.Accounts.User<>, valid?: false>}
+iex(5)> recompile
+Compiling 1 file (.ex)
+:ok
+iex(6)> LuduExp.Accounts.create_user(params)
+{:error,
+ #Ecto.Changeset<action: :insert,
+  changes: %{email: "SEDSS.yas@sf.com", username: "ABECD"},
+  errors: [password: {"can't be blank", [validation: :required]}],
+  data: #LuduExp.Accounts.User<>, valid?: false>}
+iex(7)> params = %{username: "ABECD", email: "SEDSS.yas@sf.com", password: "123"}
+%{email: "SEDSS.yas@sf.com", password: "123", username: "ABECD"}
+iex(8)> LuduExp.Accounts.create_user(params)                                    [debug] QUERY OK db=27.8ms
+INSERT INTO "users" ("email","username","inserted_at","updated_at") VALUES ($1,$2,$3,$4) RETURNING "id" ["SEDSS.yas@sf.com", "ABECD", {{2017, 8, 23}, {17, 34, 21, 86069}}, {{2017, 8, 23}, {17, 34, 21, 89868}}]
+{:ok,
+ %LuduExp.Accounts.User{__meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  email: "SEDSS.yas@sf.com", encrypted_password: nil, id: 2,
+  inserted_at: ~N[2017-08-23 17:34:21.086069], password: "123",
+  updated_at: ~N[2017-08-23 17:34:21.089868], username: "ABECD"}}
+iex(9)>
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+^Canoop@anoopVB:~/Desktop/elxSpace/luduExp$ mix phx.server
+Compiling 8 files (.ex)
+warning: variable "conn" is unused
+  lib/luduExp_web/controllers/page_controller.ex:22
+
+warning: variable "params" is unused
+  lib/luduExp_web/controllers/page_controller.ex:22
+
+warning: function Accounts.register_changeset/0 is undefined (module Accounts is not available)
+  lib/luduExp_web/controllers/page_controller.ex:16
+
+Failed to watch /home/anoop/Desktop/elxSpace/luduExp; upper limit on inotify watches reached!
+Please increase the amount of inotify watches allowed per user via `/proc/sys/fs/inotify/max_user_watches'.
+[info] Running LuduExpWeb.Endpoint with Cowboy using http://0.0.0.0:4000
+21:44:33 - info: compiled 6 files into 2 files, copied 7 in 2.7 sec
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 500 in 158ms
+[error] #PID<0.430.0> running LuduExpWeb.Endpoint terminated
+Server: localhost:4000 (http)
+Request: GET /signup
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function Accounts.register_changeset/0 is undefined (module Accounts is not available)
+        Accounts.register_changeset()
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:16: LuduExpWeb.PageController.signup/2
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.action/2
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.phoenix_controller_pipeline/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.instrument/4
+        (phoenix) lib/phoenix/router.ex:278: Phoenix.Router.__call__/1
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+        (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+        (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+        (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+Compiling 1 file (.ex)
+warning: variable "conn" is unused
+  lib/luduExp_web/controllers/page_controller.ex:23
+
+warning: variable "params" is unused
+  lib/luduExp_web/controllers/page_controller.ex:23
+
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 67ms
+[info] POST /signup
+[debug] Processing with LuduExpWeb.PageController.create_user/2
+  Parameters: %{"_csrf_token" => "ShcKaz0sFHJxIEFSHjU9YgcuOHcnJgAA/AX/GVVBZy0cySyQWVV1ng==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "[FILTERED]", "username" => ""}}
+  Pipelines: [:browser]
+Create user!
+[info] Sent 500 in 41ms
+[error] #PID<0.442.0> running LuduExpWeb.Endpoint terminated
+Server: localhost:4000 (http)
+Request: POST /signup
+** (exit) an exception was raised:
+    ** (RuntimeError) expected action/2 to return a Plug.Conn, all plugs must receive a connection (conn) and return a connection
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.phoenix_controller_pipeline/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.instrument/4
+        (phoenix) lib/phoenix/router.ex:278: Phoenix.Router.__call__/1
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+        (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+        (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+        (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+Compiling 1 file (.ex)
+warning: variable "conn" is unused
+  lib/luduExp_web/controllers/page_controller.ex:23
+
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 355µs
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 359µs
+[info] POST /signup
+Create user!
+[debug] Processing with LuduExpWeb.PageController.create_user/2
+  Parameters: %{"_csrf_token" => "VAFmIwwMAwYeHBQCVAs0SjM8CQMZEAAA1W4gvvA65Ee33mpycDgEPQ==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "[FILTERED]", "username" => ""}}
+  Pipelines: [:browser]
+%{"email" => "", "password" => "", "username" => ""}
+[info] Sent 500 in 12ms
+[error] #PID<0.477.0> running LuduExpWeb.Endpoint terminated
+Server: localhost:4000 (http)
+Request: POST /signup
+** (exit) an exception was raised:
+    ** (RuntimeError) expected action/2 to return a Plug.Conn, all plugs must receive a connection (conn) and return a connection
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.phoenix_controller_pipeline/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.instrument/4
+        (phoenix) lib/phoenix/router.ex:278: Phoenix.Router.__call__/1
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+        (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+        (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+        (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+Compiling 1 file (.ex)
+warning: variable "conn" is unused
+  lib/luduExp_web/controllers/page_controller.ex:23
+
+warning: variable "user_changeset" is unused
+  lib/luduExp_web/controllers/page_controller.ex:27
+
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 675µs
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 382µs
+[info] POST /signup
+[debug] Processing with LuduExpWeb.PageController.create_user/2
+  Parameters: %{"_csrf_token" => "Nj4qHB8TIHlPEyF+XhIwagctFmkFNgAAShxXeibIdJPO9ttYWUx/Lw==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "[FILTERED]", "username" => ""}}
+  Pipelines: [:browser]
+It failed!
+[info] Sent 500 in 19ms
+[error] #PID<0.519.0> running LuduExpWeb.Endpoint terminated
+Server: localhost:4000 (http)
+Request: POST /signup
+** (exit) an exception was raised:
+    ** (RuntimeError) expected action/2 to return a Plug.Conn, all plugs must receive a connection (conn) and return a connection
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.phoenix_controller_pipeline/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.instrument/4
+        (phoenix) lib/phoenix/router.ex:278: Phoenix.Router.__call__/1
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+        (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+        (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+        (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+^C
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+^Canoop@anoopVB:~/Desktop/elxSpace/luduExp$ mix phx.server
+Failed to watch /home/anoop/Desktop/elxSpace/luduExp; upper limit on inotify watches reached!
+Please increase the amount of inotify watches allowed per user via `/proc/sys/fs/inotify/max_user_watches'.
+[info] Running LuduExpWeb.Endpoint with Cowboy using http://0.0.0.0:4000
+21:56:57 - info: compiled 6 files into 2 files, copied 7 in 2.5 sec
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 208ms
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 306µs
+[info] POST /signup
+[debug] Processing with LuduExpWeb.PageController.create_user/2
+  Parameters: %{"_csrf_token" => "NW8dMjRVB0F7Ix1eDyU8ejgPAywIAAAAP9OvN/EqPzlohCxIhwmjAA==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "[FILTERED]", "username" => ""}}
+  Pipelines: [:browser]
+It failed!
+[info] Sent 500 in 126ms
+[error] #PID<0.376.0> running LuduExpWeb.Endpoint terminated
+Server: localhost:4000 (http)
+Request: POST /signup
+** (exit) an exception was raised:
+    ** (RuntimeError) expected action/2 to return a Plug.Conn, all plugs must receive a connection (conn) and return a connection
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.phoenix_controller_pipeline/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.instrument/4
+        (phoenix) lib/phoenix/router.ex:278: Phoenix.Router.__call__/1
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+        (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+        (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+        (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+Compiling 1 file (.ex)
+warning: variable "changeset" is unused
+  lib/luduExp_web/controllers/page_controller.ex:17
+
+warning: variable "conn" is unused
+  lib/luduExp_web/controllers/page_controller.ex:23
+
+warning: variable "user_changeset" is unused
+  lib/luduExp_web/controllers/page_controller.ex:27
+
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 500 in 47ms
+[error] #PID<0.411.0> running LuduExpWeb.Endpoint terminated
+Server: localhost:4000 (http)
+Request: GET /signup
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @user_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:conn, :view_module, :view_template]
+
+        (phoenix_html) lib/phoenix_html/engine.ex:109: Phoenix.HTML.Engine.fetch_assign/2
+        (luduExp) lib/luduExp_web/templates/page/signup.html.eex:5: LuduExpWeb.PageView."signup.html"/1
+        (luduExp) lib/luduExp_web/templates/layout/app.html.eex:28: LuduExpWeb.LayoutView."app.html"/1
+        (phoenix) lib/phoenix/view.ex:332: Phoenix.View.render_to_iodata/3
+        (phoenix) lib/phoenix/controller.ex:740: Phoenix.Controller.do_render/4
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.action/2
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.phoenix_controller_pipeline/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.instrument/4
+        (phoenix) lib/phoenix/router.ex:278: Phoenix.Router.__call__/1
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+        (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+        (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+        (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+Compiling 1 file (.ex)
+warning: variable "conn" is unused
+  lib/luduExp_web/controllers/page_controller.ex:23
+
+warning: variable "user_changeset" is unused
+  lib/luduExp_web/controllers/page_controller.ex:27
+
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 387µs
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 355µs
+[info] POST /signup
+It failed!
+[debug] Processing with LuduExpWeb.PageController.create_user/2
+  Parameters: %{"_csrf_token" => "LwFqJjFIOFlJMwhnDyo9V2gCI34fNgAAJW8bK2zibjyVhLyd8zM8Vw==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "[FILTERED]", "username" => ""}}
+  Pipelines: [:browser]
+[info] Sent 500 in 14ms
+[error] #PID<0.451.0> running LuduExpWeb.Endpoint terminated
+Server: localhost:4000 (http)
+Request: POST /signup
+** (exit) an exception was raised:
+    ** (RuntimeError) expected action/2 to return a Plug.Conn, all plugs must receive a connection (conn) and return a connection
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.phoenix_controller_pipeline/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.instrument/4
+        (phoenix) lib/phoenix/router.ex:278: Phoenix.Router.__call__/1
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+        (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+        (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+        (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+Compiling 1 file (.ex)
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 4ms
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 362µs
+[info] POST /signup
+[debug] Processing with LuduExpWeb.PageController.create_user/2
+  Parameters: %{"_csrf_token" => "Sj8kcgg4CFFkIDhpH1YTZBo9HQ0GNgAA/iv6rBJaOyIXx0WWJEsKOw==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "[FILTERED]", "username" => ""}}
+  Pipelines: [:browser]
+[info] Sent 500 in 90ms
+[error] #PID<0.474.0> running LuduExpWeb.Endpoint terminated
+Server: localhost:4000 (http)
+Request: POST /signup
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function LuduExpWeb.PageController.create_user/2 is undefined or private
+        (luduExp) LuduExpWeb.PageController.create_user(%Plug.Conn{adapter: {Plug.Adapters.Cowboy.Conn, :...}, assigns: %{}, before_send: [#Function<0.96292254/1 in Plug.CSRFProtection.call/2>, #Function<4.65855418/1 in Phoenix.Controller.fetch_flash/2>, #Function<0.112984571/1 in Plug.Session.before_send/2>, #Function<1.127390901/1 in Plug.Logger.call/2>, #Function<0.82068639/1 in Phoenix.LiveReloader.before_send_inject_reloader/2>], body_params: %{"_csrf_token" => "Sj8kcgg4CFFkIDhpH1YTZBo9HQ0GNgAA/iv6rBJaOyIXx0WWJEsKOw==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "", "username" => ""}}, cookies: %{"_luduExp_key" => "SFMyNTY.g3QAAAABbQAAAAtfY3NyZl90b2tlbm0AAAAYZVZSRHp6QjArWXExZ2ZEM1B4bkZJQT09.ZOtePoywsA-glf3sIa7BAyFRzz5qwOKeB7TBffaYt8c"}, halted: false, host: "localhost", method: "POST", owner: #PID<0.474.0>, params: %{"_csrf_token" => "Sj8kcgg4CFFkIDhpH1YTZBo9HQ0GNgAA/iv6rBJaOyIXx0WWJEsKOw==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "", "username" => ""}}, path_info: ["signup"], path_params: %{}, peer: {{127, 0, 0, 1}, 48060}, port: 4000, private: %{LuduExpWeb.Router => {[], %{}}, :phoenix_action => :create_user, :phoenix_controller => LuduExpWeb.PageController, :phoenix_endpoint => LuduExpWeb.Endpoint, :phoenix_flash => %{}, :phoenix_format => "html", :phoenix_layout => {LuduExpWeb.LayoutView, :app}, :phoenix_pipelines => [:browser], :phoenix_router => LuduExpWeb.Router, :phoenix_view => LuduExpWeb.PageView, :plug_session => %{"_csrf_token" => "eVRDzzB0+Yq1gfD3PxnFIA=="}, :plug_session_fetch => :done}, query_params: %{}, query_string: "", remote_ip: {127, 0, 0, 1}, req_cookies: %{"_luduExp_key" => "SFMyNTY.g3QAAAABbQAAAAtfY3NyZl90b2tlbm0AAAAYZVZSRHp6QjArWXExZ2ZEM1B4bkZJQT09.ZOtePoywsA-glf3sIa7BAyFRzz5qwOKeB7TBffaYt8c"}, req_headers: [{"host", "localhost:4000"}, {"user-agent", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0"}, {"accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}, {"accept-language", "en-US,en;q=0.5"}, {"accept-encoding", "gzip, deflate"}, {"referer", "http://localhost:4000/signup"}, {"content-type", "application/x-www-form-urlencoded"}, {"content-length", "147"}, {"cookie", "_luduExp_key=SFMyNTY.g3QAAAABbQAAAAtfY3NyZl90b2tlbm0AAAAYZVZSRHp6QjArWXExZ2ZEM1B4bkZJQT09.ZOtePoywsA-glf3sIa7BAyFRzz5qwOKeB7TBffaYt8c"}, {"connection", "keep-alive"}, {"upgrade-insecure-requests", "1"}], request_path: "/signup", resp_body: nil, resp_cookies: %{}, resp_headers: [{"cache-control", "max-age=0, private, must-revalidate"}, {"x-request-id", "mvc6nlvgage7mh4hef8l4d1nbh622sp0"}, {"x-frame-options", "SAMEORIGIN"}, {"x-xss-protection", "1; mode=block"}, {"x-content-type-options", "nosniff"}], scheme: :http, script_name: [], secret_key_base: "KqsZjM8bc4GNGY54/Ab1PvpBdU/t/6FJ5IQQOQvrUo1er8FO3p7dFfJlmxAfAX3U", state: :unset, status: nil}, %{"_csrf_token" => "Sj8kcgg4CFFkIDhpH1YTZBo9HQ0GNgAA/iv6rBJaOyIXx0WWJEsKOw==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "", "username" => ""}})
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.action/2
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.phoenix_controller_pipeline/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.instrument/4
+        (phoenix) lib/phoenix/router.ex:278: Phoenix.Router.__call__/1
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+        (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+        (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+        (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 439µs
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 494µs
+[info] POST /signup
+[debug] Processing with LuduExpWeb.PageController.create_user/2
+  Parameters: %{"_csrf_token" => "A2A0FTE2CX9CMDB9MR8jewBXCzEgJgAAf6fQKLKOiiALVygHP/ewig==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "[FILTERED]", "username" => ""}}
+  Pipelines: [:browser]
+[info] Sent 500 in 17ms
+[error] #PID<0.526.0> running LuduExpWeb.Endpoint terminated
+Server: localhost:4000 (http)
+Request: POST /signup
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function LuduExpWeb.PageController.create_user/2 is undefined or private
+        (luduExp) LuduExpWeb.PageController.create_user(%Plug.Conn{adapter: {Plug.Adapters.Cowboy.Conn, :...}, assigns: %{}, before_send: [#Function<0.96292254/1 in Plug.CSRFProtection.call/2>, #Function<4.65855418/1 in Phoenix.Controller.fetch_flash/2>, #Function<0.112984571/1 in Plug.Session.before_send/2>, #Function<1.127390901/1 in Plug.Logger.call/2>, #Function<0.82068639/1 in Phoenix.LiveReloader.before_send_inject_reloader/2>], body_params: %{"_csrf_token" => "A2A0FTE2CX9CMDB9MR8jewBXCzEgJgAAf6fQKLKOiiALVygHP/ewig==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "", "username" => ""}}, cookies: %{"_luduExp_key" => "SFMyNTY.g3QAAAABbQAAAAtfY3NyZl90b2tlbm0AAAAYZVZSRHp6QjArWXExZ2ZEM1B4bkZJQT09.ZOtePoywsA-glf3sIa7BAyFRzz5qwOKeB7TBffaYt8c"}, halted: false, host: "localhost", method: "POST", owner: #PID<0.526.0>, params: %{"_csrf_token" => "A2A0FTE2CX9CMDB9MR8jewBXCzEgJgAAf6fQKLKOiiALVygHP/ewig==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "", "username" => ""}}, path_info: ["signup"], path_params: %{}, peer: {{127, 0, 0, 1}, 50002}, port: 4000, private: %{LuduExpWeb.Router => {[], %{}}, :phoenix_action => :create_user, :phoenix_controller => LuduExpWeb.PageController, :phoenix_endpoint => LuduExpWeb.Endpoint, :phoenix_flash => %{}, :phoenix_format => "html", :phoenix_layout => {LuduExpWeb.LayoutView, :app}, :phoenix_pipelines => [:browser], :phoenix_router => LuduExpWeb.Router, :phoenix_view => LuduExpWeb.PageView, :plug_session => %{"_csrf_token" => "eVRDzzB0+Yq1gfD3PxnFIA=="}, :plug_session_fetch => :done}, query_params: %{}, query_string: "", remote_ip: {127, 0, 0, 1}, req_cookies: %{"_luduExp_key" => "SFMyNTY.g3QAAAABbQAAAAtfY3NyZl90b2tlbm0AAAAYZVZSRHp6QjArWXExZ2ZEM1B4bkZJQT09.ZOtePoywsA-glf3sIa7BAyFRzz5qwOKeB7TBffaYt8c"}, req_headers: [{"host", "localhost:4000"}, {"user-agent", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0"}, {"accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}, {"accept-language", "en-US,en;q=0.5"}, {"accept-encoding", "gzip, deflate"}, {"referer", "http://localhost:4000/signup"}, {"content-type", "application/x-www-form-urlencoded"}, {"content-length", "147"}, {"cookie", "_luduExp_key=SFMyNTY.g3QAAAABbQAAAAtfY3NyZl90b2tlbm0AAAAYZVZSRHp6QjArWXExZ2ZEM1B4bkZJQT09.ZOtePoywsA-glf3sIa7BAyFRzz5qwOKeB7TBffaYt8c"}, {"connection", "keep-alive"}, {"upgrade-insecure-requests", "1"}], request_path: "/signup", resp_body: nil, resp_cookies: %{}, resp_headers: [{"cache-control", "max-age=0, private, must-revalidate"}, {"x-request-id", "i5b2m4crb021thp7qfc9r273gqdmmejo"}, {"x-frame-options", "SAMEORIGIN"}, {"x-xss-protection", "1; mode=block"}, {"x-content-type-options", "nosniff"}], scheme: :http, script_name: [], secret_key_base: "KqsZjM8bc4GNGY54/Ab1PvpBdU/t/6FJ5IQQOQvrUo1er8FO3p7dFfJlmxAfAX3U", state: :unset, status: nil}, %{"_csrf_token" => "A2A0FTE2CX9CMDB9MR8jewBXCzEgJgAAf6fQKLKOiiALVygHP/ewig==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "", "username" => ""}})
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.action/2
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.phoenix_controller_pipeline/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.instrument/4
+        (phoenix) lib/phoenix/router.ex:278: Phoenix.Router.__call__/1
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+        (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+        (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+        (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 626µs
+Compiling 1 file (.ex)
+warning: variable "conn" is unused
+  lib/luduExp_web/controllers/page_controller.ex:23
+
+warning: variable "user_changeset" is unused
+  lib/luduExp_web/controllers/page_controller.ex:27
+
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 342µs
+[info] POST /signup
+It failed!
+[debug] Processing with LuduExpWeb.PageController.create_user/2
+  Parameters: %{"_csrf_token" => "HGE9Cxk8cgZaNCtGKzEqSSo7ViEDJgAAy7oOcF06qmZwLWnzzC8gJg==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "[FILTERED]", "username" => ""}}
+  Pipelines: [:browser]
+[info] Sent 500 in 19ms
+[error] #PID<0.541.0> running LuduExpWeb.Endpoint terminated
+Server: localhost:4000 (http)
+Request: POST /signup
+** (exit) an exception was raised:
+    ** (RuntimeError) expected action/2 to return a Plug.Conn, all plugs must receive a connection (conn) and return a connection
+        (luduExp) lib/luduExp_web/controllers/page_controller.ex:1: LuduExpWeb.PageController.phoenix_controller_pipeline/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.instrument/4
+        (phoenix) lib/phoenix/router.ex:278: Phoenix.Router.__call__/1
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.plug_builder_call/2
+        (luduExp) lib/plug/debugger.ex:99: LuduExpWeb.Endpoint."call (overridable 3)"/2
+        (luduExp) lib/luduExp_web/endpoint.ex:1: LuduExpWeb.Endpoint.call/2
+        (plug) lib/plug/adapters/cowboy/handler.ex:15: Plug.Adapters.Cowboy.Handler.upgrade/4
+        (cowboy) /home/anoop/Desktop/elxSpace/luduExp/deps/cowboy/src/cowboy_protocol.erl:442: :cowboy_protocol.execute/4
+Compiling 1 file (.ex)
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 479µs
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 304µs
+[info] POST /signup
+[debug] Processing with LuduExpWeb.PageController.create_user/2
+  Parameters: %{"_csrf_token" => "KSAmHU1DEEZ7CBZ4KQwNBTgVXgcoJgAALvtY79RvPQgINjI6hm0Aag==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "[FILTERED]", "username" => ""}}
+  Pipelines: [:browser]
+[info] Sent 200 in 683µs
+[info] POST /signup
+[debug] Processing with LuduExpWeb.PageController.create_user/2
+  Parameters: %{"_csrf_token" => "Hw4fdB84BQVhNUZLKSsXdjdPGgh9EAAAzXM0eBG5Jl7zNMSEg7tN4Q==", "_utf8" => "✓", "user" => %{"email" => "sdnksf.sfs@sfs.com", "password" => "[FILTERED]", "username" => "sdsfs"}}
+  Pipelines: [:browser]
+[debug] QUERY OK db=4.1ms
+INSERT INTO "users" ("email","username","inserted_at","updated_at") VALUES ($1,$2,$3,$4) RETURNING "id" ["sdnksf.sfs@sfs.com", "sdsfs", {{2017, 8, 23}, {18, 10, 41, 801551}}, {{2017, 8, 23}, {18, 10, 41, 805954}}]
+[info] Sent 302 in 70ms
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 282µs
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 225µs
+[info] GET /
+[debug] Processing with LuduExpWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 394µs
+[info] GET /login
+[debug] Processing with LuduExpWeb.PageController.login/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 219µs
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 411µs
+[info] POST /signup
+[debug] Processing with LuduExpWeb.PageController.create_user/2
+  Parameters: %{"_csrf_token" => "FAQ5BxkAJgRmP0BTVQF2AiIdOxIaJgAAqRkCczd4Mf1b2g21reUTSg==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "[FILTERED]", "username" => ""}}
+  Pipelines: [:browser]
+[info] Sent 200 in 527µs
+Compiling 1 file (.ex)
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 360µs
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 298µs
+[info] POST /signup
+[debug] Processing with LuduExpWeb.PageController.create_user/2
+  Parameters: %{"_csrf_token" => "HxAeFxNLdEgaaCBHDgMtXgUQBiMTNgAAzFLSi16x11QvieimUhheZw==", "_utf8" => "✓", "user" => %{"email" => "", "password" => "[FILTERED]", "username" => ""}}
+  Pipelines: [:browser]
+[info] Sent 200 in 26ms
+[info] GET /signup
+[debug] Processing with LuduExpWeb.PageController.signup/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 439µs
+^A
