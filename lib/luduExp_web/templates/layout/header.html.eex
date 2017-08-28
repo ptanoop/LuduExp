@@ -1,0 +1,14 @@
+
+<header>
+  <%= link "", class: "logo", to: page_path(@conn, :index) %>
+
+  <%= if logged_in?(@conn) do %>
+    <div class="profile-container">
+      <p><%= username(@conn) %></p>
+      <%= link "Log Out", to: page_path(@conn, :logout_user) %>
+    </div>
+  <% else %>
+    <%= link "Log in", to: page_path(@conn, :login) %>
+  <% end %>
+
+</header>

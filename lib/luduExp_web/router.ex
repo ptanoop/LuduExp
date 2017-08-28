@@ -31,6 +31,9 @@ defmodule LuduExpWeb.Router do
 
     post "/login", PageController, :login_user
 
+    get "/logout", PageController, :logout_user
+
+    get "/messages", ChatController, :index
 
   end
 

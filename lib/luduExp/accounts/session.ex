@@ -5,7 +5,7 @@ defmodule LuduExp.Accounts.Session do
 
   def authenticate(%{"username" => username, "password" => given_password}) do
   	user = Repo.get_by(User, username: username)
-    IO.puts(user.username)
+    #IO.puts(user.username)
     check_password(user, given_password)
   end
 

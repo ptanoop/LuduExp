@@ -8,17 +8,14 @@
     <meta name="author" content="">
 
     <title>Hello LuduExp!</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">  
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <!-- Add a class to the body: -->
     <body class=<%= @conn.path_info %>>
       <div class="container">
         <!-- Add this header: -->
-        <header>
-          <%= link "", class: "logo", to: page_path(@conn, :index) %>
-          <%= link "Log in", to: page_path(@conn, :login) %>
-        </header>
+        <%= render LuduExpWeb.LayoutView, "header.html", assigns %>
 
        	<!-- The rest should be the same: -->
         <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
@@ -29,6 +26,6 @@
         </main>
 
       </div> <!-- /container -->
-      <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+      
     </body>
 </html>

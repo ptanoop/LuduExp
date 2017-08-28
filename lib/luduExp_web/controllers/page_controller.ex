@@ -5,9 +5,11 @@ defmodule LuduExpWeb.PageController do
 
 
   def index(conn, _params) do
-    user = Guardian.Plug.current_resource(conn)
-    IO.inspect user
-    render conn
+    #user = Guardian.Plug.current_resource(conn)
+    #IO.inspect user
+    #render conn
+    changeset = Accounts.register_changeset()
+    render conn, user_changeset: changeset
   end
 
 
@@ -49,6 +51,13 @@ defmodule LuduExpWeb.PageController do
         |> put_flash(:error, message)
         |> render("login.html")
     end
+  end
+
+  def logout_user(conn, _params) do
+    conn
+    |> Guardian.Plug.sign_out
+    |> put_flash(:info, "Signed out successfully")
+    |> redirect(to: "/")
   end
 
 
